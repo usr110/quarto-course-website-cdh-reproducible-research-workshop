@@ -21,7 +21,7 @@ website:
         text: Schedule
       - href: materials.qmd
         text: Materials
-      - href: https://github.com/Pakillo/quarto-course-website-template/discussions
+      - href: https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/discussions
         text: Forum
 
 format:
