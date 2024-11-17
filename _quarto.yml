@@ -30,3 +30,10 @@ format:
     # css: styles.css
     toc: true
 
+- uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::knitr
+            any::rmarkdown
+            any::downlit
+            any::xml2
