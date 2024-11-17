@@ -25,7 +25,5 @@ This workshop will be most suitable for those with a bit of programming experien
 Participants require:
 
 -   A laptop on which they have admin rights (you can install software)
-
--   The following software installed on your laptop: Git, R, R Studio, Quarto (full instructions will be sent out to registered participants in advance)
-
+-   The following software installed on your laptop: [Git](https://git-scm.com/downloads), [R](https://cran.r-project.org/), [R Studio](https://posit.co/downloads/), Quarto (full instructions will be sent out to registered participants in advance)
 -   A GitHub account
