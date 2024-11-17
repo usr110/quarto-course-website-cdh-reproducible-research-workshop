@@ -20,10 +20,12 @@ The course concludes with strategies for publishing and sharing research project
 
 This workshop will be most suitable for those with a bit of programming experience and who have some code and data that they would like to organise and publish.
 
-Software and hardware requirements Participants require:
+**Software and hardware requirements**
 
-```         
-A laptop on which they have admin rights (you can install software)
-The following software installed on your laptop: Git, R, R Studio, Quarto (full instructions will be sent out to registered participants in advance)
-A GitHub account
-```
+Participants require:
+
+-   A laptop on which they have admin rights (you can install software)
+
+-   The following software installed on your laptop: Git, R, R Studio, Quarto (full instructions will be sent out to registered participants in advance)
+
+-   A GitHub account
