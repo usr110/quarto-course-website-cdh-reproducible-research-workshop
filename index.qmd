@@ -21,6 +21,7 @@ The course concludes with strategies for publishing and sharing research project
 
 This workshop will be most suitable for those with a bit of programming experience and who have some code and data that they would like to organise and publish.
 
+
 **Software and hardware requirements**
 
 Participants require:
