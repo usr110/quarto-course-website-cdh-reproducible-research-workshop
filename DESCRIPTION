@@ -1,0 +1,6 @@
+Depends: R (>= 4.1.0),
+  knitr,
+  rmarkdown,
+  downlit,
+  xml2
+VignetteBuilder: knitr
