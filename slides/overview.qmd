@@ -109,7 +109,6 @@ Viewing History
 
 ## Advanced Git Concepts
 
-```         
 Branching in Git
     Creating and switching branches
 Merging Branches
@@ -118,8 +117,8 @@ Resolving Merge Conflicts
     Manual conflict resolution
 Git Rebase
     Rewriting commit history
-```
 
+## test
 ::::: columns
 ::: {.column width="40%"}
 -   assadads
