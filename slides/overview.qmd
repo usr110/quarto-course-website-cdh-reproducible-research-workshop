@@ -1,0 +1,203 @@
+---
+title: "Overview"
+author: "Ali Abbas"
+format: 
+  revealjs:
+    slide-number: true
+engine: knitr
+---
+
+## Overview
+
+-   [Open Research, Collaboration and Publishing with GitHub](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
+    -   Including slides
+    -   Example project
+-   [Source code for the website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
+
+## Learning objectives
+
+-   Learn what Git is all about
+    -   History
+    -   Objectives
+-   Organize your work using a repository
+    -   Existing work
+    -   Create new work
+-   Publish your work on GitHub
+-   Share your work for collaboration
+
+## Structure of the day
+
+![](images/clipboard-2802054360.png)Website
+
+## Resources
+
+### Git related
+
+-   [Github skills](https://skills.github.com/)
+-   [Happy git with R](https://happygitwithr.com/)
+-   \[\]
+
+### Generic
+
+```         
+The Carpentries offers a lot of materials for learning R, including:
+    A thorough lesson on R programming for reproducible analyses
+    Data analyses and visualization in R for ecologists
+    Data analyses and visualization in R for social scientists
+    Working with geospatial data in R
+IBM Data Scientist Kelsey Gonzalez’s lessons on YouTube
+```
+
+### Git workflow
+
+![](images/git_areas-1.png)
+
+### GitHub
+
+-   GitHub is a commercial website that lets you store your repository publicly for free
+-   Allows developers to create, store, manage and share their code
+
+## Introduction
+
+### Git and GitHub: A Journey Through Version Control
+
+### What is Version Control?
+
+-   Definition and importance
+-   Brief history of version control systems
+
+## The Birth of Git
+
+```         
+Linus Torvalds and the Linux Kernel
+    Challenges with BitKeeper
+Git's Creation in 2005
+    Designed for speed, efficiency, and distributed development
+Key Features of Git
+    Distributed nature
+    Branching and merging
+    Integrity and security
+```
+
+## Git Basics
+
+### Installing Git
+
+#### Command-line and GUI options
+
+### Configuring Git
+
+```         
+Setting up user name and email
+```
+
+```{bash}
+git config --global user.name '[first name] [second name]'
+git config --global user.email '[email address]'
+```
+
+```         
+Creating a Repository
+    git init command
+Basic Git Workflow
+    Working directory, staging area, and repository
+Making Commits
+    git add and git commit commands
+Viewing History
+    git log command
+```
+
+## Advanced Git Concepts
+
+```         
+Branching in Git
+    Creating and switching branches
+Merging Branches
+    Fast-forward and three-way merges
+Resolving Merge Conflicts
+    Manual conflict resolution
+Git Rebase
+    Rewriting commit history
+```
+
+::::: columns
+::: {.column width="40%"}
+-   assadads
+:::
+
+::: {.column width="60%"}
+-   asdad
+-   asdasd
+:::
+:::::
+
+## The Rise of GitHub
+
+```         
+GitHub's Founding in 2008
+    Tom Preston-Werner, Chris Wanstrath, and PJ Hyett
+GitHub's Growth
+    Key milestones and user statistics2
+Microsoft's Acquisition in 2018
+    Impact on the developer community
+GitHub's Role in Open Source
+    Hosting millions of public repositories2
+```
+
+## GitHub Features
+
+```         
+Repository Management
+    Creating and organizing repositories
+Collaboration Tools
+    Pull requests and code reviews
+Issue Tracking
+    Bug reports and feature requests
+GitHub Actions
+    Continuous Integration and Deployment
+GitHub Pages
+    Hosting static websites
+```
+
+## Publishing Repositories on GitHub
+
+```         
+Creating a New Repository on GitHub
+    Public vs. private repositories
+Pushing Local Repositories to GitHub
+    git remote add and git push commands
+README and Documentation
+    Importance of clear project descriptions
+Licensing Your Project
+    Choosing an open source license
+GitHub Releases
+    Tagging and creating releases
+```
+
+## Conclusion
+
+```         
+The Future of Git and GitHub
+    AI-powered development with GitHub Copilot
+    Emerging trends in version control and collaboration
+    
+    
+```
+
+## Best practices for project organization
+
+-   Treat data as read only
+-   Data Cleaning
+-   Treat generated output as disposable
+
+[source](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html#best-practices-for-project-organization)
+
+# Create a new project
+
+-   We’re going to create a new project in RStudio:
+-   Click the “File” menu button, then “New Project”.
+-   Click “New Directory”.
+-   Click “New Project”.
+-   Type in the name of the directory to store your project, e.g. “my_project”.
+-   If available, select the checkbox for “Create a git repository.”
+-   Click the “Create Project” button.
