@@ -4,6 +4,11 @@ author: "Ali Abbas"
 format: 
   revealjs:
     slide-number: true
+    transition: fade
+    background-transition: fade
+    highlight-style: ayu-mirage
+    theme: solarized
+code-link: true
 engine: knitr
 ---
 
@@ -200,3 +205,14 @@ The Future of Git and GitHub
 -   Type in the name of the directory to store your project, e.g. “my_project”.
 -   If available, select the checkbox for “Create a git repository.”
 -   Click the “Create Project” button.
+
+
+## Slide Backgrounds {background="#43464B"}
+
+Set the `background` attribute on a slide to change the background color (all CSS color formats are supported).
+
+Different background transitions are available via the `background-transition` option.
+
+::: footer
+Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
+:::
