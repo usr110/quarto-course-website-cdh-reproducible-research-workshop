@@ -8,16 +8,22 @@ format:
     background-transition: fade
     highlight-style: ayu-mirage
     theme: solarized
+    chalkboard: true
 code-link: true
 engine: knitr
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
 ## Overview
 
--   [Open Research, Collaboration and Publishing with GitHub](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
+-   [Open Research, Collaboration and Publishing with
+    GitHub](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
     -   Including slides
     -   Example project
--   [Source code for the website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
+-   [Source code for the
+    website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
 
 ## Learning objectives
 
@@ -32,26 +38,35 @@ engine: knitr
 
 ### Git history
 
-- Background: Relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down
-- Based on lessons learned, Linus Torvalds (the creator of Linux) develop their own version control system (VCS) and called it Git (2005) with:
-  -   Speed
-  -   Simple design
-  -   Strong support for non-linear development (thousands of parallel branches)
-  -   Fully distributed
-  -   Able to handle large projects like the Linux kernel efficiently (speed and data size)
-  
-source: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+-   Background: Relationship between Linux and Bitkeeper (a distributed
+    version control systems (DVCS)) broke down
+-   Based on lessons learned, Linus Torvalds (the creator of Linux)
+    develop their own version control system (VCS) and called it
+    Git (2005) with:
+    -   Speed
+    -   Simple design
+    -   Strong support for non-linear development (thousands of parallel
+        branches)
+    -   Fully distributed
+    -   Able to handle large projects like the Linux kernel efficiently
+        (speed and data size)
+
+source:
+https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
 
 ### Key milestones
 
 Key Milestones in Git’s development
 
-- Initial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0
-- GitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.
-- Wide Adoption (2010s): From 2010s, git became the standard VCS
+-   Initial release and Git 1.0 (2005): From first version of Git to a
+    broader usage, beyond the Linux kernel project, with version 1.0
+-   GitHub Launch (2008): a web-based platform for hosting Git
+    repositories, revolutionized how developers collaborated on
+    open-source projects. GitHub’s user-friendly interface and social
+    features accelerated Git’s adoption.
+-   Wide Adoption (2010s): From 2010s, git became the standard VCS
 
 Source: https://www.geeksforgeeks.org/history-of-git/
-
 
 ## Structure of the day
 
@@ -78,12 +93,17 @@ IBM Data Scientist Kelsey Gonzalez’s lessons on YouTube
 
 ### Git workflow
 
-![](images/git_areas-1.png)
+![](images/git_areas.png)
 
-### GitHub
+### GitHub 
 
--   GitHub is a commercial website that lets you store your repository publicly for free
+-   GitHub is a commercial website that lets you store your repository
+    publicly for free
 -   Allows developers to create, store, manage and share their code
+
+![](images/github.png){.r-stretch}
+
+
 
 ## Introduction
 
@@ -126,7 +146,25 @@ git config --global user.name '[first name] [second name]'
 git config --global user.email '[email address]'
 ```
 
-```         
+If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
+
+
+### Git help and manual
+
+Git Help and Manual
+
+In case you forget options of a command, you can access the relevant list of options typing `git <command> -h` or access the corresponding Git manual by typing `git <command> --help`, e.g.:
+
+```{bash}
+#| eval: false 
+
+git config -h
+git config --help
+```
+
+
+
+## Create git repo         
 Creating a Repository
     git init command
 Basic Git Workflow
@@ -135,20 +173,15 @@ Making Commits
     git add and git commit commands
 Viewing History
     git log command
-```
 
 ## Advanced Git Concepts
 
-Branching in Git
-    Creating and switching branches
-Merging Branches
-    Fast-forward and three-way merges
-Resolving Merge Conflicts
-    Manual conflict resolution
-Git Rebase
-    Rewriting commit history
+Branching in Git Creating and switching branches Merging Branches
+Fast-forward and three-way merges Resolving Merge Conflicts Manual
+conflict resolution Git Rebase Rewriting commit history
 
 ## test
+
 ::::: columns
 ::: {.column width="40%"}
 -   assadads
@@ -221,23 +254,54 @@ The Future of Git and GitHub
 
 [source](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html#best-practices-for-project-organization)
 
-# Create a new project
+## Create a new project
 
--   We’re going to create a new project in RStudio:
+## Create New project
+
+We’re going to create a new project in RStudio:
+
 -   Click the “File” menu button, then “New Project”.
+
+![](images/New%20Project.png) \## Select project type
+
+-   Select type of project
+
+![](images/New Project Type.png)
+
 -   Click “New Directory”.
+
 -   Click “New Project”.
--   Type in the name of the directory to store your project, e.g. “my_project”.
+
+-   Type in the name of the directory to store your project, e.g.
+    “my_project”.
+
 -   If available, select the checkbox for “Create a git repository.”
+
 -   Click the “Create Project” button.
 
 
-## Slide Backgrounds {background="#43464B"}
+## New project type
 
-Set the `background` attribute on a slide to change the background color (all CSS color formats are supported).
-
-Different background transitions are available via the `background-transition` option.
-
-::: footer
-Learn more: [Slide Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
+::: columns
+::: {.column width="50%"}
+![](images/New Project Type.png)
 :::
+
+::: {.column width="50%"}
+![](images/image_2.jpg)
+
+![](images/image_3.jpg)
+:::
+:::
+<!-- ## Slide Backgrounds {background="#43464B"} -->
+
+<!-- Set the `background` attribute on a slide to change the background color -->
+<!-- (all CSS color formats are supported). -->
+
+<!-- Different background transitions are available via the -->
+<!-- `background-transition` option. -->
+
+<!-- ::: footer -->
+<!-- Learn more: [Slide -->
+<!-- Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds) -->
+<!-- ::: -->
