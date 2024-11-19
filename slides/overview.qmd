@@ -30,6 +30,29 @@ engine: knitr
 -   Publish your work on GitHub
 -   Share your work for collaboration
 
+### Git history
+
+- Background: Relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down
+- Based on lessons learned, Linus Torvalds (the creator of Linux) develop their own version control system (VCS) and called it Git (2005) with:
+  -   Speed
+  -   Simple design
+  -   Strong support for non-linear development (thousands of parallel branches)
+  -   Fully distributed
+  -   Able to handle large projects like the Linux kernel efficiently (speed and data size)
+  
+source: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+
+### Key milestones
+
+Key Milestones in Git’s development
+
+- Initial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0
+- GitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.
+- Wide Adoption (2010s): From 2010s, git became the standard VCS
+
+Source: https://www.geeksforgeeks.org/history-of-git/
+
+
 ## Structure of the day
 
 ![](images/clipboard-2802054360.png)Website
@@ -97,6 +120,8 @@ Setting up user name and email
 ```
 
 ```{bash}
+#| eval: false 
+ 
 git config --global user.name '[first name] [second name]'
 git config --global user.email '[email address]'
 ```
