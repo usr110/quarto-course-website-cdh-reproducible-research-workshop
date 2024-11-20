@@ -11,6 +11,11 @@ engine: knitr
 
 Convenor: [Ali Abbas](https://www.cdh.cam.ac.uk/about/people/ali-abbas/?category=1754), CDH RSE Methods Fellow 2024–25
 
+🗓️ November 25th, 2024\
+⏰ 13:00 - 17:00\
+🏨 Cambridge\
+✍️ [CDH Workshop on reproducibility](https://tinyurl.com/cdh-repro)
+
 This workshop introduces students to open research practices, reproducibility using Git, and code and data publishing via GitHub. Students learn best practices for organising projects, writing clean and well-documented code, and creating reproducible analyses. Examples will be given in R and Python but the techniques are generalisable to other languages. The importance of data transparency and sharing is highlighted, encouraging students to adopt an open research mindset.
 
 Git will be introduced as a powerful tool for version control and collaboration. Students will learn to track changes in their code, create branches for experimentation, and merge updates. Git’s role in ensuring reproducibility will be emphasised, showing how it allows researchers to maintain a complete history of their work.
@@ -20,7 +25,6 @@ Throughout the course, reproducibility is a key focus. Students learn to create 
 The course concludes with strategies for publishing and sharing research projects. Students learn to create GitHub Pages to showcase their work, use Zenodo for creating DOIs for their code, and explore options for deploying interactive applications using tools such as Shiny.
 
 This workshop will be most suitable for those with a bit of programming experience and who have some code and data that they would like to organise and publish.
-
 
 **Software and hardware requirements**
 
