@@ -10,6 +10,7 @@ format:
     theme: solarized
     chalkboard: true
 code-link: true
+footer: "[CDH Reproduciblity Workshop](https://tinyurl.com/cdh-repro)"
 engine: knitr
 editor: 
   markdown: 
@@ -25,6 +26,16 @@ editor:
 -   [Source code for the
     website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
 
+## Structure
+
+| Topic          | Slides/content |
+|----------------|----------------|
+| Git and GitHub | slides         |
+| Quarto         | slides         |
+| Publishing     | exercise       |
+
+: Worskshop structure
+
 ## Learning objectives
 
 -   Learn what Git is all about
@@ -33,15 +44,15 @@ editor:
 -   Organize your work using a repository
     -   Existing work
     -   Create new work
--   Publish your work on GitHub
+-   Publish and your work on GitHub
 -   Share your work for collaboration
 
 ### Git history
 
--   Background: Relationship between Linux and Bitkeeper (a distributed
+-   Background: relationship between Linux and Bitkeeper (a distributed
     version control systems (DVCS)) broke down
 -   Based on lessons learned, Linus Torvalds (the creator of Linux)
-    develop their own version control system (VCS) and called it
+    developed his own version control system (VCS) and called it
     Git (2005) with:
     -   Speed
     -   Simple design
@@ -70,7 +81,7 @@ Source: https://www.geeksforgeeks.org/history-of-git/
 
 ## Structure of the day
 
-![](images/clipboard-2802054360.png)Website
+![](images/clipboard-2802054360.png)
 
 ## Resources
 
@@ -91,43 +102,18 @@ The Carpentries offers a lot of materials for learning R, including:
 IBM Data Scientist Kelsey Gonzalez’s lessons on YouTube
 ```
 
-### Git workflow
+### GitHub
 
-![](images/git_areas.png)
-
-### GitHub 
-
--   GitHub is a commercial website that lets you store your repository
-    publicly for free
--   Allows developers to create, store, manage and share their code
+-   GitHub is a commercial website that lets you store your repository publicly for free
+-   Allows to create, store, manage and share code
 
 ![](images/github.png){.r-stretch}
 
-
-
-## Introduction
-
-### Git and GitHub: A Journey Through Version Control
-
-### What is Version Control?
-
--   Definition and importance
--   Brief history of version control systems
-
-## The Birth of Git
-
-```         
-Linus Torvalds and the Linux Kernel
-    Challenges with BitKeeper
-Git's Creation in 2005
-    Designed for speed, efficiency, and distributed development
-Key Features of Git
-    Distributed nature
-    Branching and merging
-    Integrity and security
-```
-
 ## Git Basics
+
+### Git workflow
+
+![](images/git_areas.png)
 
 ### Installing Git
 
@@ -146,14 +132,17 @@ git config --global user.name '[first name] [second name]'
 git config --global user.email '[email address]'
 ```
 
-If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
-
+If you are concerned about privacy, please review [GitHub’s instructions
+for keeping your email address
+private](https://help.github.com/articles/keeping-your-email-address-private/).
 
 ### Git help and manual
 
 Git Help and Manual
 
-In case you forget options of a command, you can access the relevant list of options typing `git <command> -h` or access the corresponding Git manual by typing `git <command> --help`, e.g.:
+In case you forget options of a command, you can access the relevant
+list of options typing `git <command> -h` or access the corresponding
+Git manual by typing `git <command> --help`, e.g.:
 
 ```{bash}
 #| eval: false 
@@ -162,23 +151,21 @@ git config -h
 git config --help
 ```
 
+## Create git repo
 
-
-## Create git repo         
-Creating a Repository
-    git init command
-Basic Git Workflow
-    Working directory, staging area, and repository
-Making Commits
-    git add and git commit commands
-Viewing History
-    git log command
+Creating a Repository git init command Basic Git Workflow Working
+directory, staging area, and repository Making Commits git add and git
+commit commands Viewing History git log command
 
 ## Advanced Git Concepts
 
 Branching in Git Creating and switching branches Merging Branches
 Fast-forward and three-way merges Resolving Merge Conflicts Manual
 conflict resolution Git Rebase Rewriting commit history
+
+### GitHub Desktop
+
+![](images/clipboard-3166778693.png)
 
 ## test
 
@@ -208,43 +195,23 @@ GitHub's Role in Open Source
 
 ## GitHub Features
 
-```         
-Repository Management
-    Creating and organizing repositories
-Collaboration Tools
-    Pull requests and code reviews
-Issue Tracking
-    Bug reports and feature requests
-GitHub Actions
-    Continuous Integration and Deployment
-GitHub Pages
-    Hosting static websites
-```
+Repository Management Creating and organizing repositories Collaboration
+Tools Pull requests and code reviews Issue Tracking Bug reports and
+feature requests GitHub Actions Continuous Integration and Deployment
+GitHub Pages Hosting static websites
 
 ## Publishing Repositories on GitHub
 
-```         
-Creating a New Repository on GitHub
-    Public vs. private repositories
-Pushing Local Repositories to GitHub
-    git remote add and git push commands
-README and Documentation
-    Importance of clear project descriptions
-Licensing Your Project
-    Choosing an open source license
-GitHub Releases
-    Tagging and creating releases
-```
+Creating a New Repository on GitHub Public vs. private repositories
+Pushing Local Repositories to GitHub git remote add and git push
+commands README and Documentation Importance of clear project
+descriptions Licensing Your Project Choosing an open source license
+GitHub Releases Tagging and creating releases
 
 ## Conclusion
 
-```         
-The Future of Git and GitHub
-    AI-powered development with GitHub Copilot
-    Emerging trends in version control and collaboration
-    
-    
-```
+The Future of Git and GitHub AI-powered development with GitHub Copilot
+Emerging trends in version control and collaboration
 
 ## Best practices for project organization
 
@@ -266,7 +233,7 @@ We’re going to create a new project in RStudio:
 
 -   Select type of project
 
-![](images/New Project Type.png)
+![](images/New%20Project%20Type.png)
 
 -   Click “New Directory”.
 
@@ -279,12 +246,11 @@ We’re going to create a new project in RStudio:
 
 -   Click the “Create Project” button.
 
-
 ## New project type
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
-![](images/New Project Type.png)
+![](images/New%20Project%20Type.png)
 :::
 
 ::: {.column width="50%"}
@@ -292,16 +258,51 @@ We’re going to create a new project in RStudio:
 
 ![](images/image_3.jpg)
 :::
-:::
+:::::
+
 <!-- ## Slide Backgrounds {background="#43464B"} -->
 
 <!-- Set the `background` attribute on a slide to change the background color -->
+
 <!-- (all CSS color formats are supported). -->
 
 <!-- Different background transitions are available via the -->
+
 <!-- `background-transition` option. -->
 
 <!-- ::: footer -->
+
 <!-- Learn more: [Slide -->
+
 <!-- Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds) -->
+
 <!-- ::: -->
+
+## Quarto
+
+[![](images/clipboard-3856080902.png)](https://quarto.org/)
+
+### Key Features
+
+-   Multi-language support (R, Python, Julia, Observable)
+-   Multiple output formats (HTML, PDF, MS Office, etc.)
+-   Reproducible research
+-   Version control friendly
+-   Extensible and customizable
+
+### Document Types
+
+Supports various document types:
+
+-   Articles
+-   Presentations 
+-   Websites
+-   Books
+-   Interactive documents
+
+### How it works
+
+![R](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png)
+
+![Python](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
+
