@@ -89,7 +89,7 @@ Source: https://www.geeksforgeeks.org/history-of-git/
 
 ## Structure of the day
 
-![](images/clipboard-2802054360.png)
+## ![](images/clipboard-1853622581.png)
 
 ## Git related
 
@@ -518,3 +518,4 @@ Commands:
   check      [target]              - Verify correct functioning of Quarto installation.
   help       [command]             - Show this help or the help of a sub-command.
 ```
+
