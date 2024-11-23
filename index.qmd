@@ -1,5 +1,6 @@
 ---
 title: "Open Research, Collaboration and Publishing with GitHub"
+author: <a href="https://www.mrc-epid.cam.ac.uk/people/ali-abbas/">Ali Abbas</a>
 engine: knitr
 ---
 
