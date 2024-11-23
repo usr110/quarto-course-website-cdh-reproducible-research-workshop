@@ -6,8 +6,8 @@ engine: knitr
 
 | Topic          | Slides/content |
 |----------------|----------------|
-| Git and GitHub | slides         |
-| Quarto         | slides         |
+| Git and GitHub | [slides]       |
+| Quarto         | [slides]       |
 | Publishing     | interactive    |
 
 : Worskshop structure
