@@ -4,37 +4,39 @@ author: "Ali Abbas"
 format: 
   revealjs:
     slide-number: true
+    incremental: true
     transition: fade
     background-transition: fade
-    highlight-style: ayu-mirage
+    highlight-style: github
     theme: solarized
-    chalkboard: true
-code-link: true
+    #history: false
+    smaller: true
+    code-line-numbers: true
+    # scrollable: false
+    # auto-stretch: true
+    # code-overflow: wrap
+    # code-copy: true
+    # code-link: true
+pagetitle: "CDH Reproduciblity Workshop"
 footer: "[CDH Reproduciblity Workshop](https://tinyurl.com/cdh-repro)"
 engine: knitr
-editor: 
-  markdown: 
-    wrap: 72
 ---
+
+```{css echo=FALSE}
+.small-code{
+  font-size: 65%  
+}
+```
 
 ## Overview
 
--   [Open Research, Collaboration and Publishing with
-    GitHub](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
+-   [Open Research, Collaboration and Publishing with GitHub](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
     -   Including slides
     -   Example project
--   [Source code for the
-    website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
 
-## Structure
-
-| Topic          | Slides/content |
-|----------------|----------------|
-| Git and GitHub | slides         |
-| Quarto         | slides         |
-| Publishing     | exercise       |
-
-: Worskshop structure
+::: fragment
+[Source code for the website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
+:::
 
 ## Learning objectives
 
@@ -44,105 +46,156 @@ editor:
 -   Organize your work using a repository
     -   Existing work
     -   Create new work
--   Publish and your work on GitHub
+-   Publish your work on GitHub
 -   Share your work for collaboration
 
-### Git history
+## Structure
 
--   Background: relationship between Linux and Bitkeeper (a distributed
-    version control systems (DVCS)) broke down
--   Based on lessons learned, Linus Torvalds (the creator of Linux)
-    developed his own version control system (VCS) and called it
-    Git (2005) with:
+| Topic          | Slides/content |
+|----------------|----------------|
+| Git and GitHub | slides         |
+| Quarto         | slides         |
+| Publishing     | interactive    |
+
+: Worskshop structure
+
+## Git history
+
+-   Background: relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down
+-   Based on lessons learned, Linus Torvalds (the creator of Linux) developed his own version control system (VCS) and called it Git (2005) with:
     -   Speed
     -   Simple design
-    -   Strong support for non-linear development (thousands of parallel
-        branches)
+    -   Strong support for non-linear development (thousands of parallel branches)
     -   Fully distributed
-    -   Able to handle large projects like the Linux kernel efficiently
-        (speed and data size)
+    -   Able to handle large projects like the Linux kernel efficiently (speed and data size)
 
-source:
-https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+::: fragment
+source: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git
+:::
 
-### Key milestones
+## Key milestones
 
-Key Milestones in Git’s development
+Key Milestones in Git’s development:
 
--   Initial release and Git 1.0 (2005): From first version of Git to a
-    broader usage, beyond the Linux kernel project, with version 1.0
--   GitHub Launch (2008): a web-based platform for hosting Git
-    repositories, revolutionized how developers collaborated on
-    open-source projects. GitHub’s user-friendly interface and social
-    features accelerated Git’s adoption.
+-   Initial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0
+-   GitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.
 -   Wide Adoption (2010s): From 2010s, git became the standard VCS
 
+::: fragment
 Source: https://www.geeksforgeeks.org/history-of-git/
+:::
 
 ## Structure of the day
 
 ![](images/clipboard-2802054360.png)
 
-## Resources
-
-### Git related
+## Git related
 
 -   [Github skills](https://skills.github.com/)
 -   [Happy git with R](https://happygitwithr.com/)
 -   \[\]
 
-### Generic
-
-```         
-The Carpentries offers a lot of materials for learning R, including:
-    A thorough lesson on R programming for reproducible analyses
-    Data analyses and visualization in R for ecologists
-    Data analyses and visualization in R for social scientists
-    Working with geospatial data in R
-IBM Data Scientist Kelsey Gonzalez’s lessons on YouTube
-```
-
-### GitHub
+## GitHub
 
 -   GitHub is a commercial website that lets you store your repository publicly for free
 -   Allows to create, store, manage and share code
 
-![](images/github.png){.r-stretch}
+::: fragment
+![](images/github.png)
+:::
 
-## Git Basics
-
-### Git workflow
+## Git workflow
 
 ![](images/git_areas.png)
 
-### Installing Git
+## Configuring Git
 
-#### Command-line and GUI options
-
-### Configuring Git
-
-```         
 Setting up user name and email
-```
 
 ```{bash}
 #| eval: false 
- 
+#| code-line-numbers: "3|4"
+#| echo: true
+#| output: true
 git config --global user.name '[first name] [second name]'
 git config --global user.email '[email address]'
 ```
 
-If you are concerned about privacy, please review [GitHub’s instructions
-for keeping your email address
-private](https://help.github.com/articles/keeping-your-email-address-private/).
+If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
 
-### Git help and manual
+## Exercise: create a git repo on Github
+
+go to github.com/user_github_username
+
+![](images/clipboard-1784368890.png)
+
+## test
+
+```{r}
+#| echo: TRUE
+#| eval: FALSE
+#| code-line-numbers: "1"
+x <- 1:10
+x
+LETTERS[x]
+```
+
+```{r}
+#| echo: TRUE
+#| eval: FALSE
+#| code-line-numbers: "2"
+x <- 1:10
+x
+LETTERS[x]
+```
+
+```{r}
+#| echo: TRUE
+#| eval: FALSE
+#| code-line-numbers: "3"
+x <- 1:10
+x
+LETTERS[x]
+```
+
+## Create new repo
+
+go to <https://github.com/new> and then specify repository name
+
+![](images/clipboard-1814069645.png)
+
+Leave all things as is - don't add README file or change any other option
+
+## Locally create a git repo
+
+Go to the directory where you'd like to create a git repo - say C:/Github <!-- <div class=small-code> -->
+
+``` bash
+# git init test_repo
+git init test_repo
+# go to the newly created dir
+cd test_repo
+# Add some text to README.md
+echo "# name_of_the_repo" >> README.md 
+# Add README.md to git
+git add README.md 
+# Make a first commit
+git commit -m "first commit" 
+# Rename brach name to main
+git branch -M main 
+# Add remote origin
+git remote add origin https://github.com/GITHUB_USERNAME/GITHUB_REPO_NAME.git 
+# Git push
+git push -u origin main
+```
+
+<!-- </div> -->
+
+## Git help and manual
 
 Git Help and Manual
 
-In case you forget options of a command, you can access the relevant
-list of options typing `git <command> -h` or access the corresponding
-Git manual by typing `git <command> --help`, e.g.:
+In case you forget options of a command, you can access the relevant list of options typing `git <command> -h` or access the corresponding Git manual by typing `git <command> --help`, e.g.:
 
 ```{bash}
 #| eval: false 
@@ -151,34 +204,65 @@ git config -h
 git config --help
 ```
 
+## Commiting process
+
+It has three parts
+
+1.  Modify: change the file in your working tree, ie go in and edit the file as usual
+2.  Stage: Tell git that you would like this file to be included in your next commit
+3.  Commit: Tell git to take a snapshot of the files you staged
+
+## At each step in the process, the file is stored in a different area:
+
+![](images/show_different_file_states.png)
+
+## git commit
+
+This means that Git has four main states that your files can be in:
+
+-   Untracked: You've created a new file and not told git to keep track of it.
+-   Modified: You've changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.
+-   Staged: You've told git to include the file next time you do a commit. We say these files are in the staging area.
+-   Committed: The file is saved in it's present state in the most recent commit.
+
 ## Create git repo
 
-Creating a Repository git init command Basic Git Workflow Working
-directory, staging area, and repository Making Commits git add and git
-commit commands Viewing History git log command
+Creating a Repository git init command Basic Git Workflow Working directory, staging area, and repository Making Commits git add and git commit commands Viewing History git log command
+
+## Exercise 2a, create an untracked file:
+
+<br>- Create a new file in your repository.
+
+::: {style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;"}
+```{=html}
+<pre><code>
+$ touch new.txt
+$ code new.txt
+</code></pre>
+```
+:::
+
+<br> Lets check what git can see...
+
+::: {style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;"}
+```{=html}
+<pre><code>
+$ git status
+</code></pre>
+```
+:::
+
+::: {.callout-tip title="git status"}
+Highlights your working branch -\> main <br> Reports commit status -\> none yet <br>Highlights untracked files -\> new.txt <br>Proposes adding these to git with 'git add'
+:::
 
 ## Advanced Git Concepts
 
-Branching in Git Creating and switching branches Merging Branches
-Fast-forward and three-way merges Resolving Merge Conflicts Manual
-conflict resolution Git Rebase Rewriting commit history
+Branching in Git Creating and switching branches Merging Branches Fast-forward and three-way merges Resolving Merge Conflicts Manual conflict resolution Git Rebase Rewriting commit history
 
-### GitHub Desktop
+## GitHub Desktop
 
-![](images/clipboard-3166778693.png)
-
-## test
-
-::::: columns
-::: {.column width="40%"}
--   assadads
-:::
-
-::: {.column width="60%"}
--   asdad
--   asdasd
-:::
-:::::
+[![GitHub Desktop](images/screenshot-windows-dark.png)](https://github.com/apps/desktop)
 
 ## The Rise of GitHub
 
@@ -195,33 +279,25 @@ GitHub's Role in Open Source
 
 ## GitHub Features
 
-Repository Management Creating and organizing repositories Collaboration
-Tools Pull requests and code reviews Issue Tracking Bug reports and
-feature requests GitHub Actions Continuous Integration and Deployment
-GitHub Pages Hosting static websites
+Repository Management Creating and organizing repositories Collaboration Tools Pull requests and code reviews Issue Tracking Bug reports and feature requests GitHub Actions Continuous Integration and Deployment GitHub Pages Hosting static websites
 
 ## Publishing Repositories on GitHub
 
-Creating a New Repository on GitHub Public vs. private repositories
-Pushing Local Repositories to GitHub git remote add and git push
-commands README and Documentation Importance of clear project
-descriptions Licensing Your Project Choosing an open source license
-GitHub Releases Tagging and creating releases
+Creating a New Repository on GitHub Public vs. private repositories Pushing Local Repositories to GitHub git remote add and git push commands README and Documentation Importance of clear project descriptions Licensing Your Project Choosing an open source license GitHub Releases Tagging and creating releases
 
 ## Conclusion
 
-The Future of Git and GitHub AI-powered development with GitHub Copilot
-Emerging trends in version control and collaboration
+The Future of Git and GitHub AI-powered development with GitHub Copilot Emerging trends in version control and collaboration
 
 ## Best practices for project organization
 
 -   Treat data as read only
 -   Data Cleaning
 -   Treat generated output as disposable
+-   Separate function definition and application
+-   Save the data in the data directory
 
 [source](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html#best-practices-for-project-organization)
-
-## Create a new project
 
 ## Create New project
 
@@ -229,9 +305,9 @@ We’re going to create a new project in RStudio:
 
 -   Click the “File” menu button, then “New Project”.
 
-![](images/New%20Project.png) \## Select project type
+![](images/New%20Project.png){width="87%"} \## Select project type
 
--   Select type of project
+## Select project Type
 
 ![](images/New%20Project%20Type.png)
 
@@ -239,8 +315,7 @@ We’re going to create a new project in RStudio:
 
 -   Click “New Project”.
 
--   Type in the name of the directory to store your project, e.g.
-    “my_project”.
+-   Type in the name of the directory to store your project, e.g. “my_project”.
 
 -   If available, select the checkbox for “Create a git repository.”
 
@@ -282,7 +357,7 @@ We’re going to create a new project in RStudio:
 
 [![](images/clipboard-3856080902.png)](https://quarto.org/)
 
-### Key Features
+## Key Features
 
 -   Multi-language support (R, Python, Julia, Observable)
 -   Multiple output formats (HTML, PDF, MS Office, etc.)
@@ -290,19 +365,69 @@ We’re going to create a new project in RStudio:
 -   Version control friendly
 -   Extensible and customizable
 
-### Document Types
+## Document Types
 
 Supports various document types:
 
 -   Articles
--   Presentations 
+-   Presentations
 -   Websites
 -   Books
 -   Interactive documents
 
-### How it works
+## How it works
 
-![R](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png)
+![Python](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png)
 
-![Python](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
+![R](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
+
+
+## Quarto Document Structure
+
+    YAML header for metadata and options
+    Code chunks for executable content
+    Markdown text for narrative and formatting
+
+## Rendering in RStudio
+
+    Use "Render" button or Cmd/Ctrl + Shift + K
+    Preview updates automatically
+    Option to "Render on Save" for live preview
+
+
+## Output Formats
+
+    HTML, PDF, MS Word, and more
+    Specify in YAML header: format: html, pdf, docx
+    Switch between formats using dropdown menu
+
+## Code Execution
+
+    Run individual chunks with "Run" button
+    Execute all chunks with "Run All"
+    Output displayed inline or in console
+
+## Visual Editor
+
+    WYSIWYG interface for easy editing
+    Insert elements with Cmd/Ctrl + / shortcut
+    Seamless switching between visual and source modes
+
+## Advanced Features
+
+    Table of contents: toc: true in YAML
+    Citations and bibliographies
+    Cross-references and equations
+
+## Version Control Integration
+
+    Built-in Git integration in RStudio
+    Commit and push changes directly from IDE
+    Collaborate easily with others
+
+## Resources and Next Steps
+
+    Quarto documentation: quarto.org
+    RStudio Quarto Guide
+    Practice with different output formats and features
 
