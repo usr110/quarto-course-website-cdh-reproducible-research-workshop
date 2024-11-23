@@ -17,8 +17,6 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: schedule.qmd
-        text: Schedule
       - href: materials.qmd
         text: Materials
       - href: https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/discussions
