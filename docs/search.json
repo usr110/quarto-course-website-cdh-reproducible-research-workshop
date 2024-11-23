@@ -333,5 +333,12 @@
     "title": "Schedule",
     "section": "",
     "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
+  },
+  {
+    "objectID": "slides/overview.html#motivation---tackling-repr",
+    "href": "slides/overview.html#motivation---tackling-repr",
+    "title": "Overview",
+    "section": "Motivation - Tackling repr",
+    "text": "Motivation - Tackling repr\nHere are 4 key points about the reproducibility crisis in science:\n• Over 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments\n• A survey revealed that 52% of researchers believed there was a “significant reproducibility crisis” in science\n• Factors contributing to reproducibility issues include pressure to publish, selective reporting, insufficient replication in labs, poor oversight, and low statistical power\n• The reproducibility crisis affects multiple scientific fields, including psychology, medicine, genetics, and oncology, with some studies finding reproducibility rates as low as 10-40% in certain areas"
   }
 ]
