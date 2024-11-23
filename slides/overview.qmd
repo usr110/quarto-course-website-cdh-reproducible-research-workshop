@@ -518,4 +518,3 @@ Commands:
   check      [target]              - Verify correct functioning of Quarto installation.
   help       [command]             - Show this help or the help of a sub-command.
 ```
-
