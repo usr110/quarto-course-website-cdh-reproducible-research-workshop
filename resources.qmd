@@ -1,0 +1,12 @@
+---
+title: "Resources"
+engine: knitr
+---
+
+-   A primer on Github - [Github skills](https://skills.github.com/)
+
+-   A comprehensive guide on git using R in particular - [Happy git with R](https://happygitwithr.com/)
+
+-   An interactive website to learn about git branching at different levels  - [Git Branching](https://learngitbranching.js.org/)
+
+-   A two-day workshop with examples on how to use Quarto - [Getting Started with Quarto by Tom Mock](<https://rstudio-conf-2022.github.io/get-started-quarto/>)
