@@ -19,6 +19,8 @@ website:
         text: Home
       - href: materials.qmd
         text: Materials
+      - href: resources.qmd
+        text: Resources
       - href: https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/discussions
         text: Forum
 
