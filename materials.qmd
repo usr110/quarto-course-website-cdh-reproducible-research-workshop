@@ -3,5 +3,14 @@ title: "Course Materials"
 engine: knitr
 ---
 
-[Slides](slides/)
+
+| Topic          | Slides/content |
+|----------------|----------------|
+| Git and GitHub | slides         |
+| Quarto         | slides         |
+| Publishing     | interactive    |
+
+: Worskshop structure
+
+
 
