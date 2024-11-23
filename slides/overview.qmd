@@ -59,6 +59,8 @@ engine: knitr
 
 : Worskshop structure
 
+# Git {#git background-image="https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header-740x416.png" background-size="cover" background-color="white" style="purple"}
+
 ## Git history
 
 -   Background: relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down
@@ -97,7 +99,7 @@ Source: https://www.geeksforgeeks.org/history-of-git/
 
 ## GitHub
 
--   GitHub is a commercial website that lets you store your repository publicly for free
+-   GitHub is a website that lets you store your repository publicly for free
 -   Allows to create, store, manage and share code
 
 ::: fragment
@@ -122,6 +124,23 @@ git config --global user.email '[email address]'
 ```
 
 If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
+
+## Git commit
+
+Git has four main states that your files can be in:
+
+-   Untracked: You've created a new file and not told git to keep track of it.
+-   Modified: You've changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.
+-   Staged: You've told git to include the file next time you do a commit. We say these files are in the staging area.
+-   Committed: The file is saved in it's present state in the most recent commit.
+
+## At each step in the process, the file is stored in a different area:
+
+![](images/show_different_file_states.png)
+
+::: fragment
+![](images/github.png)
+:::
 
 ## Exercise: create a git repo on Github
 
@@ -167,8 +186,6 @@ git push -u origin main
 
 ## Git help and manual
 
-Git Help and Manual
-
 In case you forget options of a command, you can access the relevant list of options typing `git <command> -h` or access the corresponding Git manual by typing `git <command> --help`, e.g.:
 
 ```{bash}
@@ -178,30 +195,9 @@ git config -h
 git config --help
 ```
 
-## Commiting process
+<!-- ## Create git repo -->
 
-It has three parts
-
-1.  Modify: change the file in your working tree, ie go in and edit the file as usual
-2.  Stage: Tell git that you would like this file to be included in your next commit
-3.  Commit: Tell git to take a snapshot of the files you staged
-
-## At each step in the process, the file is stored in a different area:
-
-![](images/show_different_file_states.png)
-
-## git commit
-
-This means that Git has four main states that your files can be in:
-
--   Untracked: You've created a new file and not told git to keep track of it.
--   Modified: You've changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.
--   Staged: You've told git to include the file next time you do a commit. We say these files are in the staging area.
--   Committed: The file is saved in it's present state in the most recent commit.
-
-## Create git repo
-
-Creating a Repository git init command Basic Git Workflow Working directory, staging area, and repository Making Commits git add and git commit commands Viewing History git log command
+<!-- Creating a Repository git init command Basic Git Workflow Working directory, staging area, and repository Making Commits git add and git commit commands Viewing History git log command -->
 
 ## Exercise 2a, create an untracked file:
 
@@ -254,6 +250,30 @@ GitHub's Role in Open Source
 ## GitHub Features
 
 Repository Management Creating and organizing repositories Collaboration Tools Pull requests and code reviews Issue Tracking Bug reports and feature requests GitHub Actions Continuous Integration and Deployment GitHub Pages Hosting static websites
+
+## To clone or to fork (1/2)?
+
+Use a *clone* when:
+
+-   Collaboration (team or owner) OR all of the following is true:
+
+-   It is owned by someone else and you are happy not to have ownership of the codebase
+
+-   You have permission to push branches up to the repo
+
+-   You want easy access to the latest changes made by others to the central repository
+
+-   You want the main branch in the repo to be updated and edited by others working on the project
+
+## To clone or to fork (2/2)?
+
+Use a *fork* when:
+
+-   The owner of the repo is not someone you are actively collaborating with
+-   You want to take the development of the code in a different direction from the original owner of the repo
+-   You want full ownership over your version of the codebase
+-   You want complete control over other's contributions to the codebase
+-   You do not want or have permission on the main branch
 
 ## Publishing Repositories on GitHub
 
@@ -349,7 +369,6 @@ Supports various document types:
 -   Books
 -   Interactive documents
 
-
 ## Quarto
 
 > Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
@@ -357,8 +376,6 @@ Supports various document types:
 . . .
 
 No more copy-paste, no more manually rebuilding analyses from disparate components, no more dread when the data is updated and you need to run an analysis.
-
-
 
 ## Anatomy of a Quarto document
 
@@ -392,63 +409,75 @@ mtcars %>%
 This is a sentence with some **bold text**, some *italic text* and an [image](image.png).
 ```
 
-
 ## How it works
 
 ![Python](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png)
 
 ![R](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
 
-
 ## Quarto Document Structure
 
-    YAML header for metadata and options
-    Code chunks for executable content
-    Markdown text for narrative and formatting
+```         
+YAML header for metadata and options
+Code chunks for executable content
+Markdown text for narrative and formatting
+```
 
 ## Rendering in RStudio
 
-    Use "Render" button or Cmd/Ctrl + Shift + K
-    Preview updates automatically
-    Option to "Render on Save" for live preview
-
+```         
+Use "Render" button or Cmd/Ctrl + Shift + K
+Preview updates automatically
+Option to "Render on Save" for live preview
+```
 
 ## Output Formats
 
-    HTML, PDF, MS Word, and more
-    Specify in YAML header: format: html, pdf, docx
-    Switch between formats using dropdown menu
+```         
+HTML, PDF, MS Word, and more
+Specify in YAML header: format: html, pdf, docx
+Switch between formats using dropdown menu
+```
 
 ## Code Execution
 
-    Run individual chunks with "Run" button
-    Execute all chunks with "Run All"
-    Output displayed inline or in console
+```         
+Run individual chunks with "Run" button
+Execute all chunks with "Run All"
+Output displayed inline or in console
+```
 
 ## Visual Editor
 
-    WYSIWYG interface for easy editing
-    Insert elements with Cmd/Ctrl + / shortcut
-    Seamless switching between visual and source modes
+```         
+WYSIWYG interface for easy editing
+Insert elements with Cmd/Ctrl + / shortcut
+Seamless switching between visual and source modes
+```
 
 ## Advanced Features
 
-    Table of contents: toc: true in YAML
-    Citations and bibliographies
-    Cross-references and equations
+```         
+Table of contents: toc: true in YAML
+Citations and bibliographies
+Cross-references and equations
+```
 
 ## Version Control Integration
 
-    Built-in Git integration in RStudio
-    Commit and push changes directly from IDE
-    Collaborate easily with others
+```         
+Built-in Git integration in RStudio
+Commit and push changes directly from IDE
+Collaborate easily with others
+```
 
 ## Resources and Next Steps
 
-    Quarto documentation: quarto.org
-    RStudio Quarto Guide
-    Practice with different output formats and features
-
+```         
+Quarto documentation: quarto.org
+RStudio Quarto Guide
+Practice with different output formats and features
+```
 
 ## Quarto cli interface
 
@@ -489,6 +518,3 @@ Commands:
   check      [target]              - Verify correct functioning of Quarto installation.
   help       [command]             - Show this help or the help of a sub-command.
 ```
-
-
-
