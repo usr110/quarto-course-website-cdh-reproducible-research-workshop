@@ -28,6 +28,8 @@ engine: knitr
 }
 ```
 
+# Open Research, Collaboration and Publishing with GitHub
+
 ## Overview
 
 -   [Open Research, Collaboration and Publishing with GitHub](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
@@ -37,6 +39,18 @@ engine: knitr
 ::: fragment
 [Source code for the website](https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/)
 :::
+
+# Reproducibility Crisis {background-image="https://geneticliteracyproject.org/wp-content/uploads/2019/05/replication-yellow-art-.jpg" background-size="cover" background-color="white"}
+
+## Reproducibility crisis in research
+
+• [Over 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments](https://www.nature.com/articles/533452a)
+
+• [A survey revealed that 52% of researchers believed there was a "significant reproducibility crisis" in science](https://www.cam.ac.uk/research/discussion/opinion-the-science-reproducibility-crisis-and-what-can-be-done-about-it)
+
+• [Factors contributing to reproducibility issues include pressure to publish, selective reporting, insufficient replication in labs, poor oversight, and low statistical power](https://www.nature.com/articles/533452a)
+
+• [The reproducibility crisis affects multiple scientific fields, including psychology, medicine, genetics, and oncology, with some studies finding reproducibility rates as low as 10-40% in certain areas](https://pmc.ncbi.nlm.nih.gov/articles/PMC5579390/)
 
 ## Learning objectives
 
