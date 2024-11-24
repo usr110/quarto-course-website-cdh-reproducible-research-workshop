@@ -25,14 +25,14 @@
     "href": "slides/quarto_intro.html#quarto-1",
     "title": "Introduction to Quarto",
     "section": "Quarto",
-    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\n\nBrings code and documentation together\nRunning them side by side\nGenerating outputs as we along"
+    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\n\nBrings code and documentation together\nRunning them side by side\nGenerating outputs as we go along"
   },
   {
     "objectID": "slides/quarto_intro.html#anatomy-of-a-quarto-document",
     "href": "slides/quarto_intro.html#anatomy-of-a-quarto-document",
     "title": "Introduction to Quarto",
     "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\n\nMetadata (YAML)\n\n---\nformat: html\n---\n\n\nCode\n\n\n```{r}\n#| eval: true\nlibrary(dplyr)\nmtcars %&gt;% \n  group_by(cyl) %&gt;%\n  summarize(mean = mean(mpg), .groups = \"drop\")\n```\n\n# A tibble: 3 × 2\n    cyl  mean\n  &lt;dbl&gt; &lt;dbl&gt;\n1     4  26.7\n2     6  19.7\n3     8  15.1\n\n\n\n\n\nText\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
+    "text": "Anatomy of a Quarto document\n\nMetadata (YAML) and options\n\n---\nformat: html\n---\n\n\nCode (executable chunks)\n\n\n```{r}\n#| eval: true\nlibrary(dplyr)\nmtcars %&gt;% \n  group_by(cyl) %&gt;%\n  summarize(mean = mean(mpg), .groups = \"drop\")\n```\n\n# A tibble: 3 × 2\n    cyl  mean\n  &lt;dbl&gt; &lt;dbl&gt;\n1     4  26.7\n2     6  19.7\n3     8  15.1\n\n\n\n\n\nText (narrative and formatting)\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
   },
   {
     "objectID": "slides/quarto_intro.html#how-it-works",
@@ -42,18 +42,11 @@
     "text": "How it works\n\n\n\nPython\n\n\n\n\n\nR"
   },
   {
-    "objectID": "slides/quarto_intro.html#quarto-document-structure",
-    "href": "slides/quarto_intro.html#quarto-document-structure",
-    "title": "Introduction to Quarto",
-    "section": "Quarto Document Structure",
-    "text": "Quarto Document Structure\nYAML header for metadata and options\nCode chunks for executable content\nMarkdown text for narrative and formatting"
-  },
-  {
     "objectID": "slides/quarto_intro.html#rendering-in-rstudio",
     "href": "slides/quarto_intro.html#rendering-in-rstudio",
     "title": "Introduction to Quarto",
     "section": "Rendering in RStudio",
-    "text": "Rendering in RStudio\nUse \"Render\" button or Cmd/Ctrl + Shift + K\nPreview updates automatically\nOption to \"Render on Save\" for live preview"
+    "text": "Rendering in RStudio\n\nUse “Render” button or Cmd/Ctrl + Shift + K\nPreview updates automatically\nOption to “Render on Save” for live preview"
   },
   {
     "objectID": "slides/quarto_intro.html#output-formats",
@@ -102,7 +95,7 @@
     "href": "slides/quarto_intro.html#quarto-cli-interface",
     "title": "Introduction to Quarto",
     "section": "Quarto cli interface",
-    "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command.\n\n\n\n\nCDH Reproduciblity Workshop"
+    "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command.\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
   },
   {
     "objectID": "schedule.html",
@@ -144,309 +137,232 @@
   {
     "objectID": "slides/overview.html#overview",
     "href": "slides/overview.html#overview",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Overview",
-    "text": "Overview\n\nOpen Research, Collaboration and Publishing with GitHub\n\nIncluding slides\nExample project\n\n\n\nSource code for the website"
+    "text": "Overview\n\n\nOpen Research, Collaboration and Publishing with GitHub\n\nIncluding slides\nExample project\n\n\n\n\nSource code for the website"
   },
   {
     "objectID": "slides/overview.html#reproducibility-crisis-in-research",
     "href": "slides/overview.html#reproducibility-crisis-in-research",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Reproducibility crisis in research",
     "text": "Reproducibility crisis in research\n• Over 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments\n• A survey revealed that 52% of researchers believed there was a “significant reproducibility crisis” in science\n• Factors contributing to reproducibility issues include pressure to publish, selective reporting, insufficient replication in labs, poor oversight, and low statistical power\n• The reproducibility crisis affects multiple scientific fields, including psychology, medicine, genetics, and oncology, with some studies finding reproducibility rates as low as 10-40% in certain areas"
   },
   {
     "objectID": "slides/overview.html#learning-objectives",
     "href": "slides/overview.html#learning-objectives",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Learning objectives",
-    "text": "Learning objectives\n\nLearn what Git is all about\n\nHistory\nObjectives\n\nOrganize your work using a repository\n\nExisting work\nCreate new work\n\nPublish your work on GitHub\nShare your work for collaboration"
+    "text": "Learning objectives\n\nLearn what Git is all about\n\nHistory\nObjectives\n\n\nOrganize your work using a repository\n\nExisting work\nCreate new work\n\n\nPublish your work on GitHub\nShare your work for collaboration"
   },
   {
-    "objectID": "slides/overview.html#structure",
-    "href": "slides/overview.html#structure",
-    "title": "Overview",
-    "section": "Structure",
-    "text": "Structure\n\nWorskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nGit and GitHub\nslides\n\n\nQuarto\nslides\n\n\nPublishing\ninteractive"
+    "objectID": "slides/overview.html#website",
+    "href": "slides/overview.html#website",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Website",
+    "text": "Website\n\n\n\n\n\nWebsite for the workshop"
+  },
+  {
+    "objectID": "slides/overview.html#structure-of-the-day",
+    "href": "slides/overview.html#structure-of-the-day",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Structure of the day",
+    "text": "Structure of the day\n\nWorskshop structure\n\nTopic\nSlides/content\n\n\n\nOverview with the focus on Git and GitHub\nOverview\n\n\nIntroduction to Quarto\nQuarto\n\n\nPublishing using Zenodo\ninteractive"
   },
   {
     "objectID": "slides/overview.html#git-history",
     "href": "slides/overview.html#git-history",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Git history",
-    "text": "Git history\n\nBackground: relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down\nBased on lessons learned, Linus Torvalds (the creator of Linux) developed his own version control system (VCS) and called it Git (2005) with:\n\nSpeed\nSimple design\nStrong support for non-linear development (thousands of parallel branches)\nFully distributed\nAble to handle large projects like the Linux kernel efficiently (speed and data size)\n\n\n\nsource: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git"
+    "text": "Git history\n\nBackground: relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down\nBased on lessons learned, Linus Torvalds (the creator of Linux) developed his own version control system (VCS) and called it Git (2005) with:\n\nSpeed\nSimple design\nStrong support for non-linear development (thousands of parallel branches)\nFully distributed\nAble to handle large projects like the Linux kernel efficiently (speed and data size)\n\n\n\n\nsource: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git"
   },
   {
     "objectID": "slides/overview.html#key-milestones",
     "href": "slides/overview.html#key-milestones",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Key milestones",
     "text": "Key milestones\nKey Milestones in Git’s development:\n\nInitial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0\nGitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.\nWide Adoption (2010s): From 2010s, git became the standard VCS\n\n\nSource: https://www.geeksforgeeks.org/history-of-git/"
   },
   {
     "objectID": "slides/overview.html#git-comic",
     "href": "slides/overview.html#git-comic",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Git comic",
-    "text": "Git comic\n\n\n\n\n\n\n\nWhat git is all about?"
-  },
-  {
-    "objectID": "slides/overview.html#structure-of-the-day",
-    "href": "slides/overview.html#structure-of-the-day",
-    "title": "Overview",
-    "section": "Structure of the day",
-    "text": "Structure of the day"
-  },
-  {
-    "objectID": "slides/overview.html#github",
-    "href": "slides/overview.html#github",
-    "title": "Overview",
-    "section": "GitHub",
-    "text": "GitHub\n\nGitHub is a website that lets you store your repository publicly for free\nAllows to create, store, manage and share code"
-  },
-  {
-    "objectID": "slides/overview.html#git-workflow",
-    "href": "slides/overview.html#git-workflow",
-    "title": "Overview",
-    "section": "Git workflow",
-    "text": "Git workflow"
+    "text": "Git comic\n\n\n\n\n\nWhat git is all about?"
   },
   {
     "objectID": "slides/overview.html#configuring-git",
     "href": "slides/overview.html#configuring-git",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Configuring Git",
     "text": "Configuring Git\nSetting up user name and email\n\ngit config --global user.name '[first name] [second name]'\ngit config --global user.email '[email address]'\n\nIf you are concerned about privacy, please review GitHub’s instructions for keeping your email address private."
   },
   {
+    "objectID": "slides/overview.html#set-personal-access-token-pat",
+    "href": "slides/overview.html#set-personal-access-token-pat",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Set Personal Access Token (PAT)",
+    "text": "Set Personal Access Token (PAT)\nPAT to communicate with Github requires:\n\nVisit Github token generator\n\nOr from R, use usethis::create_github_token()\n\n\n\nSelect these scopes at a minimum: repo, user, and workflow\n\nPress Generate token\n\nCopy the generated PAT to your clipboard - and save it in a notepad\nProvide this PAT next time a Git operation asks for your password or store it by calling gitcreds::gitcreds_set()\n\n\n\nInstructions from: Happy Git and GitHub for the useR"
+  },
+  {
     "objectID": "slides/overview.html#git-commit",
     "href": "slides/overview.html#git-commit",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Git commit",
     "text": "Git commit\nGit has four main states that your files can be in:\n\nUntracked: You’ve created a new file and not told git to keep track of it.\nModified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.\nStaged: You’ve told git to include the file next time you do a commit. We say these files are in the staging area.\nCommitted: The file is saved in it’s present state in the most recent commit."
   },
   {
     "objectID": "slides/overview.html#at-each-step-in-the-process-the-file-is-stored-in-a-different-area",
     "href": "slides/overview.html#at-each-step-in-the-process-the-file-is-stored-in-a-different-area",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "At each step in the process, the file is stored in a different area:",
     "text": "At each step in the process, the file is stored in a different area:"
   },
   {
     "objectID": "slides/overview.html#exercise-create-a-git-repo-on-github",
     "href": "slides/overview.html#exercise-create-a-git-repo-on-github",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Exercise: create a git repo on Github",
     "text": "Exercise: create a git repo on Github\ngo to github.com/user_github_username"
   },
   {
     "objectID": "slides/overview.html#create-new-repo",
     "href": "slides/overview.html#create-new-repo",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Create new repo",
     "text": "Create new repo\nGo to https://github.com/new and then specify repository name\n\nLeave all things as is - don’t add README file or change any other option"
   },
   {
     "objectID": "slides/overview.html#locally-create-a-git-repo",
     "href": "slides/overview.html#locally-create-a-git-repo",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Locally create a git repo",
-    "text": "Locally create a git repo\nGo to the directory where you’d like to create a git repo - say C:/Github \n\n# Initialized a git repository called `test_repo`\ngit init test_repo\n# go to the newly created dir\ncd test_repo\n# Add some text to README.md\necho \"# name_of_the_repo\" &gt;&gt; README.md \n# Add README.md to git\ngit add README.md \n# Make a first commit\ngit commit -m \"init commit - add README.md\" \n# Rename branch name to main\ngit branch -M main \n# Add remote origin\ngit remote add origin https://github.com/GITHUB_USERNAME/GITHUB_REPO_NAME.git \n# Git push\ngit push -u origin main"
+    "text": "Locally create a git repo\nGo to the directory where you’d like to create a git repo - say C:/Github \n\n# Initialized a git repository called `test_repo`\ngit init NAME_OF_THE_REPO\n# go to the newly created dir\ncd NAME_OF_THE_REPO\n# Add some text to README.md\necho \"# name_of_the_repo\" &gt;&gt; README.md \n# Add README.md to git\ngit add README.md \n# Make a first commit\ngit commit -m \"init commit - add README.md\" \n# Rename branch name to main\ngit branch -M main \n# Add remote origin\ngit remote add origin https://github.com/GITHUB_USERNAME/NAME_OF_THE_REPO.git \n# Git push\ngit push -u origin main"
   },
   {
     "objectID": "slides/overview.html#git-help-and-manual",
     "href": "slides/overview.html#git-help-and-manual",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Git help and manual",
     "text": "Git help and manual\nIn case you forget options of a command, you can access the relevant list of options typing git &lt;command&gt; -h or access the corresponding Git manual by typing git &lt;command&gt; --help, e.g.:"
   },
   {
-    "objectID": "slides/overview.html#exercise-2a-create-an-untracked-file",
-    "href": "slides/overview.html#exercise-2a-create-an-untracked-file",
-    "title": "Overview",
-    "section": "Exercise 2a, create an untracked file:",
-    "text": "Exercise 2a, create an untracked file:\n- Create a new file in your repository.\n\n\n$ touch new.txt\n$ code new.txt\n\n\n Lets check what git can see…\n\n\n$ git status\n\n\n\n\n\n\n\n\n\ngit status\n\n\nHighlights your working branch -&gt; main  Reports commit status -&gt; none yet Highlights untracked files -&gt; new.txt Proposes adding these to git with ‘git add’"
+    "objectID": "slides/overview.html#exercise-create-an-untracked-file",
+    "href": "slides/overview.html#exercise-create-an-untracked-file",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Exercise: Create an untracked file:",
+    "text": "Exercise: Create an untracked file:\n- Create a new file in your repository.\n\n\n$ touch new.txt\n$ code new.txt\n\n\n Lets check what git can see…\n\n\n$ git status\n\n\n\n\n\n\n\n\n\ngit status\n\n\nHighlights your working branch -&gt; main  Reports commit status -&gt; none yet Highlights untracked files -&gt; new.txt Proposes adding these to git with ‘git add’"
+  },
+  {
+    "objectID": "slides/overview.html#exercise-create-a-git-branch",
+    "href": "slides/overview.html#exercise-create-a-git-branch",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Exercise: create a git branch",
+    "text": "Exercise: create a git branch\n\nCreate a new branch using: git branch my-shiny-new-branch\n\nCheckout the branch using: git checkout my-shiny-new-branch\n\nMake a change in your new branch by editing new.txt and committing the changes.\nNote: you can combine the first two steps into one using git checkout -b my-shiny-new-branch\n\nOptional: set it upstream by git push --set-upstream origin my-shiny-new-branch"
+  },
+  {
+    "objectID": "slides/overview.html#exercise-switch-between-branches",
+    "href": "slides/overview.html#exercise-switch-between-branches",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Exercise: switch between branches",
+    "text": "Exercise: switch between branches"
   },
   {
     "objectID": "slides/overview.html#advanced-git-concepts",
     "href": "slides/overview.html#advanced-git-concepts",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Advanced Git Concepts",
-    "text": "Advanced Git Concepts\nBranching in Git Creating and switching branches Merging Branches Fast-forward and three-way merges Resolving Merge Conflicts Manual conflict resolution Git Rebase Rewriting commit history"
+    "text": "Advanced Git Concepts\nNot covered\n\nMerging Branches\nResolving Merge Conflicts Manual conflict resolution\nGit Rebase\nRewriting commit history"
+  },
+  {
+    "objectID": "slides/overview.html#git-merge",
+    "href": "slides/overview.html#git-merge",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Git Merge",
+    "text": "Git Merge\n\n\nHow git merge works"
+  },
+  {
+    "objectID": "slides/overview.html#git-rebase",
+    "href": "slides/overview.html#git-rebase",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Git Rebase",
+    "text": "Git Rebase\n\nHow git rebase works"
   },
   {
     "objectID": "slides/overview.html#github-desktop",
     "href": "slides/overview.html#github-desktop",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "GitHub Desktop",
-    "text": "GitHub Desktop\n\n\n\nGitHub Desktop"
-  },
-  {
-    "objectID": "slides/overview.html#overview-of-an-example-repo",
-    "href": "slides/overview.html#overview-of-an-example-repo",
-    "title": "Overview",
-    "section": "Overview of an example repo",
-    "text": "Overview of an example repo\n\n\n\n\n\n\n\nA repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)"
+    "text": "GitHub Desktop\n\n\nGitHub Desktop"
   },
   {
     "objectID": "slides/overview.html#to-clone-or-to-fork-12",
     "href": "slides/overview.html#to-clone-or-to-fork-12",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "To clone or to fork (1/2)?",
     "text": "To clone or to fork (1/2)?\nUse a clone when:\n\nCollaboration (team or owner) OR all of the following is true:\nIt is owned by someone else and you are happy not to have ownership of the codebase\nYou have permission to push branches up to the repo\nYou want easy access to the latest changes made by others to the central repository\nYou want the main branch in the repo to be updated and edited by others working on the project"
   },
   {
     "objectID": "slides/overview.html#to-clone-or-to-fork-22",
     "href": "slides/overview.html#to-clone-or-to-fork-22",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "To clone or to fork (2/2)?",
     "text": "To clone or to fork (2/2)?\nUse a fork when:\n\nThe owner of the repo is not someone you are actively collaborating with\nYou want to take the development of the code in a different direction from the original owner of the repo\nYou want full ownership over your version of the codebase\nYou want complete control over other’s contributions to the codebase\nYou do not want or have permission on the main branch"
   },
   {
+    "objectID": "slides/overview.html#github",
+    "href": "slides/overview.html#github",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "GitHub",
+    "text": "GitHub\n\nGitHub is a website that lets you store your repository publicly for free\nAllows to create, store, manage and share code"
+  },
+  {
+    "objectID": "slides/overview.html#overview-of-an-example-repo",
+    "href": "slides/overview.html#overview-of-an-example-repo",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "Overview of an example repo",
+    "text": "Overview of an example repo\n\n\n\n\n\nA repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)"
+  },
+  {
     "objectID": "slides/overview.html#publishing-repositories-on-github",
     "href": "slides/overview.html#publishing-repositories-on-github",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Publishing Repositories on GitHub",
-    "text": "Publishing Repositories on GitHub\n\nCreating a New Repository on GitHub Public vs. private repositories\nPushing Local Repositories to GitHub\n\ngit remote add and git push commands\nREADME and Documentation\n\nImportance of clear project descriptions\nLicensing\nYour Project Choosing an open source license GitHub Releases Tagging and creating releases"
+    "text": "Publishing Repositories on GitHub\n\nCreating a New Repository on GitHub Public vs. private repositories\n\nPushing Local Repositories to GitHub\n\ngit remote add and git push commands\nREADME and Documentation\n\n\nImportance of clear project descriptions \nLicensing\nYour Project Choosing an open source license GitHub Releases Tagging and creating releases"
   },
   {
     "objectID": "slides/overview.html#best-practices-for-project-organization",
     "href": "slides/overview.html#best-practices-for-project-organization",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Best practices for project organization",
-    "text": "Best practices for project organization\n\nTreat data as read only\nDescribe data cleaning/wrangling steps\nTreat generated output as disposable\nSeparate function definition and application\nSave the data in the data directory\n\nsource"
+    "text": "Best practices for project organization\n\nTreat data as read only\nDescribe data cleaning/wrangling steps\nTreat generated output as disposable\nSeparate function definition and application\nSave the data in the data directory\n\n\nsource"
   },
   {
     "objectID": "slides/overview.html#how-to-name-files",
     "href": "slides/overview.html#how-to-name-files",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "How to name files",
-    "text": "How to name files\n\nAvoid spaces\nNumber them with to follow order with a prefix as 01_read_data.R for the first file in the analysis\nFor dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.\nNever use the word final in any file name - it never is!\n\nsource: An introduction to R"
+    "text": "How to name files\n\nAvoid spaces\nNumber them with to follow order with a prefix as 01_read_data.R for the first file in the analysis\nFor dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.\nNever use the word final in any file name - it never is!\n\n\nsource: An introduction to R"
   },
   {
     "objectID": "slides/overview.html#create-new-project",
     "href": "slides/overview.html#create-new-project",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Create New project",
     "text": "Create New project\nWe’re going to create a new project in RStudio:\n\nClick the “File” menu button, then “New Project”.\n\n ## Select project type"
   },
   {
     "objectID": "slides/overview.html#select-project-type",
     "href": "slides/overview.html#select-project-type",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "Select project Type",
     "text": "Select project Type\n\n\nClick “New Directory”.\nClick “New Project”.\nType in the name of the directory to store your project, e.g. “my_project”.\nIf available, select the checkbox for “Create a git repository.”\nClick the “Create Project” button."
   },
   {
     "objectID": "slides/overview.html#new-project-type",
     "href": "slides/overview.html#new-project-type",
-    "title": "Overview",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "New project type",
-    "text": "New project type"
-  },
-  {
-    "objectID": "slides/overview.html#quarto",
-    "href": "slides/overview.html#quarto",
-    "title": "Overview",
-    "section": "Quarto",
-    "text": "Quarto"
-  },
-  {
-    "objectID": "slides/overview.html#key-features",
-    "href": "slides/overview.html#key-features",
-    "title": "Overview",
-    "section": "Key Features",
-    "text": "Key Features\n\nMulti-language support (R, Python, Julia, Observable)\nMultiple output formats (HTML, PDF, MS Office, etc.)\nReproducible research\nVersion control friendly\nExtensible and customizable"
-  },
-  {
-    "objectID": "slides/overview.html#document-types",
-    "href": "slides/overview.html#document-types",
-    "title": "Overview",
-    "section": "Document Types",
-    "text": "Document Types\nSupports various document types:\n\nArticles\nPresentations\nWebsites\nBooks\nInteractive documents"
-  },
-  {
-    "objectID": "slides/overview.html#quarto-1",
-    "href": "slides/overview.html#quarto-1",
-    "title": "Overview",
-    "section": "Quarto",
-    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\n\nBrings code and documentation together\nRunning them side by side\nGenerating outputs as we along"
-  },
-  {
-    "objectID": "slides/overview.html#anatomy-of-a-quarto-document",
-    "href": "slides/overview.html#anatomy-of-a-quarto-document",
-    "title": "Overview",
-    "section": "Anatomy of a Quarto document",
-    "text": "Anatomy of a Quarto document\n\nMetadata (YAML)\n\n---\nformat: html\n---\n\n\nCode\n\n\n```{r}\n#| eval: true\nlibrary(dplyr)\nmtcars %&gt;% \n  group_by(cyl) %&gt;%\n  summarize(mean = mean(mpg), .groups = \"drop\")\n```\n\n# A tibble: 3 × 2\n    cyl  mean\n  &lt;dbl&gt; &lt;dbl&gt;\n1     4  26.7\n2     6  19.7\n3     8  15.1\n\n\n\n\n\nText\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
-  },
-  {
-    "objectID": "slides/overview.html#how-it-works",
-    "href": "slides/overview.html#how-it-works",
-    "title": "Overview",
-    "section": "How it works",
-    "text": "How it works\n\n\n\nPython\n\n\n\n\n\nR"
-  },
-  {
-    "objectID": "slides/overview.html#quarto-document-structure",
-    "href": "slides/overview.html#quarto-document-structure",
-    "title": "Overview",
-    "section": "Quarto Document Structure",
-    "text": "Quarto Document Structure\nYAML header for metadata and options\nCode chunks for executable content\nMarkdown text for narrative and formatting"
-  },
-  {
-    "objectID": "slides/overview.html#rendering-in-rstudio",
-    "href": "slides/overview.html#rendering-in-rstudio",
-    "title": "Overview",
-    "section": "Rendering in RStudio",
-    "text": "Rendering in RStudio\nUse \"Render\" button or Cmd/Ctrl + Shift + K\nPreview updates automatically\nOption to \"Render on Save\" for live preview"
-  },
-  {
-    "objectID": "slides/overview.html#output-formats",
-    "href": "slides/overview.html#output-formats",
-    "title": "Overview",
-    "section": "Output Formats",
-    "text": "Output Formats\nHTML, PDF, MS Word, and more\nSpecify in YAML header: format: html, pdf, docx\nSwitch between formats using dropdown menu"
-  },
-  {
-    "objectID": "slides/overview.html#code-execution",
-    "href": "slides/overview.html#code-execution",
-    "title": "Overview",
-    "section": "Code Execution",
-    "text": "Code Execution\nRun individual chunks with \"Run\" button\nExecute all chunks with \"Run All\"\nOutput displayed inline or in console"
-  },
-  {
-    "objectID": "slides/overview.html#visual-editor",
-    "href": "slides/overview.html#visual-editor",
-    "title": "Overview",
-    "section": "Visual Editor",
-    "text": "Visual Editor\nWYSIWYG interface for easy editing\nInsert elements with Cmd/Ctrl + / shortcut\nSeamless switching between visual and source modes"
-  },
-  {
-    "objectID": "slides/overview.html#advanced-features",
-    "href": "slides/overview.html#advanced-features",
-    "title": "Overview",
-    "section": "Advanced Features",
-    "text": "Advanced Features\nTable of contents: toc: true in YAML\nCitations and bibliographies\nCross-references and equations"
-  },
-  {
-    "objectID": "slides/overview.html#version-control-integration",
-    "href": "slides/overview.html#version-control-integration",
-    "title": "Overview",
-    "section": "Version Control Integration",
-    "text": "Version Control Integration\nBuilt-in Git integration in RStudio\nCommit and push changes directly from IDE\nCollaborate easily with others"
-  },
-  {
-    "objectID": "slides/overview.html#resources-and-next-steps",
-    "href": "slides/overview.html#resources-and-next-steps",
-    "title": "Overview",
-    "section": "Resources and Next Steps",
-    "text": "Resources and Next Steps\nQuarto documentation: quarto.org\nRStudio Quarto Guide\nPractice with different output formats and features"
-  },
-  {
-    "objectID": "slides/overview.html#quarto-cli-interface",
-    "href": "slides/overview.html#quarto-cli-interface",
-    "title": "Overview",
-    "section": "Quarto cli interface",
-    "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command.\n\n\n\n\nCDH Reproduciblity Workshop"
+    "text": "New project type\n\n\n\n\n\n\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
   }
 ]

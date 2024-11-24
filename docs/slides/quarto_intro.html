@@ -446,21 +446,21 @@ Ali Abbas
 <ul>
 <li class="fragment"><p>Brings code and documentation together</p></li>
 <li class="fragment"><p>Running them side by side</p></li>
-<li class="fragment"><p>Generating outputs as we along</p></li>
+<li class="fragment"><p>Generating outputs as we go along</p></li>
 </ul>
 </div>
 </section>
 <section id="anatomy-of-a-quarto-document" class="slide level2">
 <h2>Anatomy of a Quarto document</h2>
 <ul>
-<li class="fragment">Metadata (YAML)</li>
+<li class="fragment">Metadata (YAML) and options</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="pp">---</span></span>
 <span id="cb1-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
 <span id="cb1-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <ul>
-<li class="fragment">Code</li>
+<li class="fragment">Code (executable chunks)</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
@@ -482,7 +482,7 @@ Ali Abbas
 </div>
 <div class="fragment">
 <ul>
-<li class="fragment">Text</li>
+<li class="fragment">Text (narrative and formatting)</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="fu"># Heading 1</span></span>
 <span id="cb4-2"><a></a>This is a sentence with some **bold text**, some *italic text* and an <span class="co">[</span><span class="ot">image</span><span class="co">](image.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -503,17 +503,13 @@ Ali Abbas
 </figure>
 </div>
 </section>
-<section id="quarto-document-structure" class="slide level2">
-<h2>Quarto Document Structure</h2>
-<pre><code>YAML header for metadata and options
-Code chunks for executable content
-Markdown text for narrative and formatting</code></pre>
-</section>
 <section id="rendering-in-rstudio" class="slide level2">
 <h2>Rendering in RStudio</h2>
-<pre><code>Use "Render" button or Cmd/Ctrl + Shift + K
-Preview updates automatically
-Option to "Render on Save" for live preview</code></pre>
+<ul>
+<li class="fragment">Use “Render” button or Cmd/Ctrl + Shift + K</li>
+<li class="fragment">Preview updates automatically</li>
+<li class="fragment">Option to “Render on Save” for live preview</li>
+</ul>
 </section>
 <section id="output-formats" class="slide level2">
 <h2>Output Formats</h2>
@@ -554,43 +550,43 @@ Practice with different output formats and features</code></pre>
 <section id="quarto-cli-interface" class="slide level2">
 <h2>Quarto cli interface</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="|1|4|10|16|17"><pre class="sourceCode numberSource py number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a></a>Usage:   quarto</span>
-<span id="cb13-2"><a></a>Version: <span class="fl">1.5.57</span></span>
-<span id="cb13-3"><a></a></span>
-<span id="cb13-4"><a></a>Description:</span>
-<span id="cb13-5"><a></a></span>
-<span id="cb13-6"><a></a>  Quarto CLI</span>
-<span id="cb13-7"><a></a></span>
-<span id="cb13-8"><a></a>Options:</span>
-<span id="cb13-9"><a></a></span>
-<span id="cb13-10"><a></a>  <span class="op">-</span>h, <span class="op">--</span><span class="bu">help</span>     <span class="op">-</span> Show this <span class="bu">help</span>.</span>
-<span id="cb13-11"><a></a>  <span class="op">-</span>V, <span class="op">--</span>version  <span class="op">-</span> Show the version number <span class="cf">for</span> this program.</span>
-<span id="cb13-12"><a></a></span>
-<span id="cb13-13"><a></a>Commands:</span>
-<span id="cb13-14"><a></a></span>
-<span id="cb13-15"><a></a>  render     [<span class="bu">input</span>] [args...]     <span class="op">-</span> Render files <span class="kw">or</span> projects to various document types.</span>
-<span id="cb13-16"><a></a>  preview    [<span class="bu">file</span>] [args...]      <span class="op">-</span> Render <span class="kw">and</span> preview a document <span class="kw">or</span> website project.</span>
-<span id="cb13-17"><a></a>  serve      [<span class="bu">input</span>]               <span class="op">-</span> Serve a Shiny interactive document.</span>
-<span id="cb13-18"><a></a>  create     [<span class="bu">type</span>] [commands...]  <span class="op">-</span> Create a Quarto project <span class="kw">or</span> extension</span>
-<span id="cb13-19"><a></a>  use        <span class="op">&lt;</span><span class="bu">type</span><span class="op">&gt;</span> [target]       <span class="op">-</span> Automate document <span class="kw">or</span> project setup tasks.</span>
-<span id="cb13-20"><a></a>  add        <span class="op">&lt;</span>extension<span class="op">&gt;</span>           <span class="op">-</span> Add an extension to this folder <span class="kw">or</span> project</span>
-<span id="cb13-21"><a></a>  update     [target...]           <span class="op">-</span> Updates an extension <span class="kw">or</span> <span class="kw">global</span> dependency.</span>
-<span id="cb13-22"><a></a>  remove     [target...]           <span class="op">-</span> Removes an extension.</span>
-<span id="cb13-23"><a></a>  convert    <span class="op">&lt;</span><span class="bu">input</span><span class="op">&gt;</span>               <span class="op">-</span> Convert documents to alternate representations.</span>
-<span id="cb13-24"><a></a>  pandoc     [args...]             <span class="op">-</span> Run the version of Pandoc embedded within Quarto.</span>
-<span id="cb13-25"><a></a>  typst      [args...]             <span class="op">-</span> Run the version of Typst embedded within Quarto.</span>
-<span id="cb13-26"><a></a>  run        [script] [args...]    <span class="op">-</span> Run a TypeScript, R, Python, <span class="kw">or</span> Lua script.</span>
-<span id="cb13-27"><a></a>  install    [target...]           <span class="op">-</span> Installs a <span class="kw">global</span> dependency (TinyTex <span class="kw">or</span> Chromium).</span>
-<span id="cb13-28"><a></a>  uninstall  [tool]                <span class="op">-</span> Removes an extension.</span>
-<span id="cb13-29"><a></a>  tools                            <span class="op">-</span> Display the status of Quarto installed dependencies</span>
-<span id="cb13-30"><a></a>  publish    [provider] [path]     <span class="op">-</span> Publish a document <span class="kw">or</span> project to a provider.</span>
-<span id="cb13-31"><a></a>  check      [target]              <span class="op">-</span> Verify correct functioning of Quarto installation.</span>
-<span id="cb13-32"><a></a>  <span class="bu">help</span>       [command]             <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|1|4|10|16|17"><pre class="sourceCode numberSource py number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>Usage:   quarto</span>
+<span id="cb11-2"><a></a>Version: <span class="fl">1.5.57</span></span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a>Description:</span>
+<span id="cb11-5"><a></a></span>
+<span id="cb11-6"><a></a>  Quarto CLI</span>
+<span id="cb11-7"><a></a></span>
+<span id="cb11-8"><a></a>Options:</span>
+<span id="cb11-9"><a></a></span>
+<span id="cb11-10"><a></a>  <span class="op">-</span>h, <span class="op">--</span><span class="bu">help</span>     <span class="op">-</span> Show this <span class="bu">help</span>.</span>
+<span id="cb11-11"><a></a>  <span class="op">-</span>V, <span class="op">--</span>version  <span class="op">-</span> Show the version number <span class="cf">for</span> this program.</span>
+<span id="cb11-12"><a></a></span>
+<span id="cb11-13"><a></a>Commands:</span>
+<span id="cb11-14"><a></a></span>
+<span id="cb11-15"><a></a>  render     [<span class="bu">input</span>] [args...]     <span class="op">-</span> Render files <span class="kw">or</span> projects to various document types.</span>
+<span id="cb11-16"><a></a>  preview    [<span class="bu">file</span>] [args...]      <span class="op">-</span> Render <span class="kw">and</span> preview a document <span class="kw">or</span> website project.</span>
+<span id="cb11-17"><a></a>  serve      [<span class="bu">input</span>]               <span class="op">-</span> Serve a Shiny interactive document.</span>
+<span id="cb11-18"><a></a>  create     [<span class="bu">type</span>] [commands...]  <span class="op">-</span> Create a Quarto project <span class="kw">or</span> extension</span>
+<span id="cb11-19"><a></a>  use        <span class="op">&lt;</span><span class="bu">type</span><span class="op">&gt;</span> [target]       <span class="op">-</span> Automate document <span class="kw">or</span> project setup tasks.</span>
+<span id="cb11-20"><a></a>  add        <span class="op">&lt;</span>extension<span class="op">&gt;</span>           <span class="op">-</span> Add an extension to this folder <span class="kw">or</span> project</span>
+<span id="cb11-21"><a></a>  update     [target...]           <span class="op">-</span> Updates an extension <span class="kw">or</span> <span class="kw">global</span> dependency.</span>
+<span id="cb11-22"><a></a>  remove     [target...]           <span class="op">-</span> Removes an extension.</span>
+<span id="cb11-23"><a></a>  convert    <span class="op">&lt;</span><span class="bu">input</span><span class="op">&gt;</span>               <span class="op">-</span> Convert documents to alternate representations.</span>
+<span id="cb11-24"><a></a>  pandoc     [args...]             <span class="op">-</span> Run the version of Pandoc embedded within Quarto.</span>
+<span id="cb11-25"><a></a>  typst      [args...]             <span class="op">-</span> Run the version of Typst embedded within Quarto.</span>
+<span id="cb11-26"><a></a>  run        [script] [args...]    <span class="op">-</span> Run a TypeScript, R, Python, <span class="kw">or</span> Lua script.</span>
+<span id="cb11-27"><a></a>  install    [target...]           <span class="op">-</span> Installs a <span class="kw">global</span> dependency (TinyTex <span class="kw">or</span> Chromium).</span>
+<span id="cb11-28"><a></a>  uninstall  [tool]                <span class="op">-</span> Removes an extension.</span>
+<span id="cb11-29"><a></a>  tools                            <span class="op">-</span> Display the status of Quarto installed dependencies</span>
+<span id="cb11-30"><a></a>  publish    [provider] [path]     <span class="op">-</span> Publish a document <span class="kw">or</span> project to a provider.</span>
+<span id="cb11-31"><a></a>  check      [target]              <span class="op">-</span> Verify correct functioning of Quarto installation.</span>
+<span id="cb11-32"><a></a>  <span class="bu">help</span>       [command]             <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p><a href="https://tinyurl.com/cdh-repro">CDH Reproduciblity Workshop</a></p>
+<p><a href="https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/">CDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro</a></p>
 </div>
 </div>
 </section>

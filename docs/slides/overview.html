@@ -7,17 +7,19 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
-
-  <meta name="author" content="Ali Abbas">
-  <title>CDH Reproducible Research Workshop – CDH Reproduciblity Workshop</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+<meta name="author" content="Ali Abbas">
+<title>CDH Reproducible Research Workshop – CDH Reproduciblity Workshop</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+<style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -95,12 +97,12 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+<link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+<style type="text/css">
 
   .callout {
     margin-top: 1em;
@@ -298,7 +300,7 @@
   }
 
   </style>
-  <style type="text/css">
+<style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
       overflow: auto;
@@ -309,6 +311,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -390,8 +393,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Overview</h1>
+<section id="title-slide" class="quarto-title-block center"><h1 class="title">Open Research, Collaboration and Publishing with GitHub</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -401,199 +403,164 @@ Ali Abbas
 </div>
 </div>
 
-</section>
-<section class="slide level2">
-
-<div class="cell">
+</section><section class="slide level2"><div class="cell">
 <style type="text/css">
 .small-code{
   font-size: 65%  
 }
 </style>
 </div>
-</section>
-<section>
-<section id="open-research-collaboration-and-publishing-with-github" class="title-slide slide level1 center">
-<h1>Open Research, Collaboration and Publishing with GitHub</h1>
-
-</section>
-<section id="overview" class="slide level2">
-<h2>Overview</h2>
+</section><section id="overview" class="slide level2"><h2>Overview</h2>
 <ul>
-<li class="fragment"><a href="https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/">Open Research, Collaboration and Publishing with GitHub</a>
+<li>
+<a href="https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/">Open Research, Collaboration and Publishing with GitHub</a>
 <ul>
-<li class="fragment">Including slides</li>
-<li class="fragment">Example project</li>
-</ul></li>
+<li>Including slides</li>
+<li>Example project</li>
+</ul>
+</li>
 </ul>
 <div class="fragment">
 <p><a href="https://github.com/usr110/quarto-course-website-cdh-reproducible-research-workshop/">Source code for the website</a></p>
 </div>
-</section></section>
-<section>
-<section id="reproducibility-crisis" class="title-slide slide level1 center" data-background-image="https://geneticliteracyproject.org/wp-content/uploads/2019/05/replication-yellow-art-.jpg" data-background-size="cover" data-background-color="white">
-<h1>Reproducibility Crisis</h1>
+</section><section><section id="reproducibility-crisis" class="title-slide slide level1 center" data-background-image="https://geneticliteracyproject.org/wp-content/uploads/2019/05/replication-yellow-art-.jpg" data-background-size="cover" data-background-color="white"><h1>Reproducibility Crisis</h1>
 
-</section>
-<section id="reproducibility-crisis-in-research" class="slide level2">
-<h2>Reproducibility crisis in research</h2>
+</section><section id="reproducibility-crisis-in-research" class="slide level2"><h2>Reproducibility crisis in research</h2>
 <p>• <a href="https://www.nature.com/articles/533452a">Over 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments</a></p>
 <p>• <a href="https://www.cam.ac.uk/research/discussion/opinion-the-science-reproducibility-crisis-and-what-can-be-done-about-it">A survey revealed that 52% of researchers believed there was a “significant reproducibility crisis” in science</a></p>
 <p>• <a href="https://www.nature.com/articles/533452a">Factors contributing to reproducibility issues include pressure to publish, selective reporting, insufficient replication in labs, poor oversight, and low statistical power</a></p>
 <p>• <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5579390/">The reproducibility crisis affects multiple scientific fields, including psychology, medicine, genetics, and oncology, with some studies finding reproducibility rates as low as 10-40% in certain areas</a></p>
-</section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning objectives</h2>
+</section><section id="learning-objectives" class="slide level2"><h2>Learning objectives</h2>
 <ul>
-<li class="fragment">Learn what Git is all about
+<li>Learn what <code>Git</code> is all about
 <ul>
-<li class="fragment">History</li>
-<li class="fragment">Objectives</li>
-</ul></li>
-<li class="fragment">Organize your work using a repository
-<ul>
-<li class="fragment">Existing work</li>
-<li class="fragment">Create new work</li>
-</ul></li>
-<li class="fragment">Publish your work on GitHub</li>
-<li class="fragment">Share your work for collaboration</li>
+<li>History</li>
+<li>Objectives</li>
 </ul>
-</section>
-<section id="structure" class="slide level2">
-<h2>Structure</h2>
+</li>
+<li>Organize your work using a repository
+<ul>
+<li>Existing work</li>
+<li>Create new work</li>
+</ul>
+</li>
+<li>Publish your work on GitHub</li>
+<li>Share your work for collaboration</li>
+</ul></section><section id="website" class="slide level2"><h2>Website</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure><div class="quarto-figure quarto-figure-center">
+<figure><p><a href="https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/"><img data-src="images/website.png" class="quarto-figure quarto-figure-center" alt="Website for the workshop"></a></p>
+</figure>
+</div>
+<figcaption>Website for the workshop</figcaption></figure>
+</div>
+</section><section id="structure-of-the-day" class="slide level2"><h2>Structure of the day</h2>
 <table class="caption-top">
 <caption>Worskshop structure</caption>
-<thead>
-<tr class="header">
+<thead><tr class="header">
 <th>Topic</th>
 <th>Slides/content</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
-<td>Git and GitHub</td>
-<td>slides</td>
+<td>Overview with the focus on Git and GitHub</td>
+<td><a href="slides/overview.html" title="Overview">Overview</a></td>
 </tr>
 <tr class="even">
-<td>Quarto</td>
-<td>slides</td>
+<td>Introduction to Quarto</td>
+<td><a href="slides/quarto_intro.html" title="Introduction to Quarto">Quarto</a></td>
 </tr>
 <tr class="odd">
-<td>Publishing</td>
+<td>Publishing using Zenodo</td>
 <td>interactive</td>
 </tr>
 </tbody>
-</table>
-</section></section>
-<section>
-<section id="git" class="title-slide slide level1 center" data-background-image="https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header-740x416.png" data-background-size="cover" data-background-color="white" style="purple">
-<h1>Git</h1>
+</table></section></section><section><section id="git" class="title-slide slide level1 center" data-background-image="https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header-740x416.png" data-background-size="cover" data-background-color="white" style="purple"><h1>Git</h1>
 
-</section>
-<section id="git-history" class="slide level2">
-<h2>Git history</h2>
+</section><section id="git-history" class="slide level2"><h2>Git history</h2>
 <ul>
-<li class="fragment">Background: relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down</li>
-<li class="fragment">Based on lessons learned, Linus Torvalds (the creator of Linux) developed his own version control system (VCS) and called it Git (2005) with:
+<li>Background: relationship between Linux and Bitkeeper (a distributed version control systems (DVCS)) broke down</li>
+<li>Based on lessons learned, Linus Torvalds (the creator of Linux) developed his own version control system (VCS) and called it Git (2005) with:
 <ul>
-<li class="fragment">Speed</li>
-<li class="fragment">Simple design</li>
-<li class="fragment">Strong support for non-linear development (thousands of parallel branches)</li>
-<li class="fragment">Fully distributed</li>
-<li class="fragment">Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
-</ul></li>
+<li>Speed</li>
+<li>Simple design</li>
+<li>Strong support for non-linear development (thousands of parallel branches)</li>
+<li>Fully distributed</li>
+<li>Able to handle large projects like the Linux kernel efficiently (speed and data size)</li>
+</ul>
+</li>
 </ul>
 <div class="fragment">
 <p>source: https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git</p>
 </div>
-</section>
-<section id="key-milestones" class="slide level2">
-<h2>Key milestones</h2>
+</section><section id="key-milestones" class="slide level2"><h2>Key milestones</h2>
 <p>Key Milestones in Git’s development:</p>
 <ul>
-<li class="fragment">Initial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0</li>
-<li class="fragment">GitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.</li>
-<li class="fragment">Wide Adoption (2010s): From 2010s, git became the standard VCS</li>
+<li>Initial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0</li>
+<li>GitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.</li>
+<li>Wide Adoption (2010s): From 2010s, git became the standard VCS</li>
 </ul>
 <div class="fragment">
 <p>Source: https://www.geeksforgeeks.org/history-of-git/</p>
 </div>
-</section>
-<section id="git-comic" class="slide level2">
-<h2>Git comic</h2>
+</section><section id="git-comic" class="slide level2"><h2>Git comic</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://xkcd.com/1597/"><img data-src="https://imgs.xkcd.com/comics/git.png" class="quarto-figure quarto-figure-center" width="438" alt="What git is all about?"></a></p>
+<figure><div class="quarto-figure quarto-figure-center">
+<figure><p><a href="https://xkcd.com/1597/"><img data-src="https://imgs.xkcd.com/comics/git.png" class="quarto-figure quarto-figure-center" width="438" alt="What git is all about?"></a></p>
 </figure>
 </div>
-<figcaption>What git is all about?</figcaption>
-</figure>
+<figcaption>What git is all about?</figcaption></figure>
 </div>
-</section>
-<section id="structure-of-the-day" class="slide level2">
-<h2>Structure of the day</h2>
-</section>
-<section id="section" class="slide level2">
-<h2><img data-src="images/clipboard-1853622581.png"></h2>
-</section>
-<section id="github" class="slide level2">
-<h2>GitHub</h2>
-<ul>
-<li class="fragment">GitHub is a website that lets you store your repository publicly for free</li>
-<li class="fragment">Allows to create, store, manage and share code</li>
-</ul>
-<div class="fragment">
-<p><img data-src="images/github.png"></p>
-</div>
-</section>
-<section id="git-workflow" class="slide level2">
-<h2>Git workflow</h2>
-
-<img data-src="images/git_areas.png" class="r-stretch"></section>
-<section id="configuring-git" class="slide level2">
-<h2>Configuring Git</h2>
+</section><section id="configuring-git" class="slide level2"><h2>Configuring Git</h2>
 <p>Setting up user name and email</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|1|2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">'[first name] [second name]'</span></span>
 <span id="cb1-2"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">'[email address]'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>If you are concerned about privacy, please review <a href="https://help.github.com/articles/keeping-your-email-address-private/">GitHub’s instructions for keeping your email address private</a>.</p>
-</section>
-<section id="git-commit" class="slide level2">
-<h2>Git commit</h2>
+</section><section id="set-personal-access-token-pat" class="slide level2"><h2>Set Personal Access Token (PAT)</h2>
+<p>PAT to communicate with Github requires:</p>
+<ul>
+<li>Visit <a href="https://github.com/settings/tokens">Github token generator</a>
+<ul>
+<li>Or from R, use <code><a href="https://usethis.r-lib.org/reference/github-token.html">usethis::create_github_token()</a></code>
+</li>
+</ul>
+</li>
+<li>Select these scopes at a minimum: <em>repo</em>, <em>user</em>, and <em>workflow</em>
+</li>
+<li>Press <strong>Generate token</strong>
+</li>
+<li>Copy the generated PAT to your clipboard - and save it in a notepad</li>
+<li>Provide this PAT next time a Git operation asks for your password or store it by calling <code><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds::gitcreds_set()</a></code>
+</li>
+</ul>
+<div class="fragment">
+<p>Instructions from: <a href="https://happygitwithr.com/https-pat">Happy Git and GitHub for the useR</a></p>
+</div>
+</section><section id="git-commit" class="slide level2"><h2>Git commit</h2>
 <p>Git has four main states that your files can be in:</p>
 <ul>
-<li class="fragment">Untracked: You’ve created a new file and not told git to keep track of it.</li>
-<li class="fragment">Modified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.</li>
-<li class="fragment">Staged: You’ve told git to include the file next time you do a commit. We say these files are in the staging area.</li>
-<li class="fragment">Committed: The file is saved in it’s present state in the most recent commit.</li>
-</ul>
-</section>
-<section id="at-each-step-in-the-process-the-file-is-stored-in-a-different-area" class="slide level2">
-<h2>At each step in the process, the file is stored in a different area:</h2>
+<li>Untracked: You’ve created a new file and not told git to keep track of it.</li>
+<li>Modified: You’ve changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the <code>working tree</code>.</li>
+<li>Staged: You’ve told git to include the file next time you do a commit. We say these files are in the <code>staging area</code>.</li>
+<li>Committed: The file is saved in it’s present state in the most recent commit.</li>
+</ul></section><section id="at-each-step-in-the-process-the-file-is-stored-in-a-different-area" class="slide level2"><h2>At each step in the process, the file is stored in a different area:</h2>
 
-<img data-src="images/show_different_file_states.png" class="r-stretch"></section>
-<section id="exercise-create-a-git-repo-on-github" class="slide level2">
-<h2>Exercise: create a git repo on Github</h2>
+<img data-src="images/git_areas.png" class="r-stretch"></section><section id="exercise-create-a-git-repo-on-github" class="slide level2"><h2>Exercise: create a git repo on Github</h2>
 <p>go to github.com/user_github_username</p>
 
-<img data-src="images/clipboard-1784368890.png" class="r-stretch"></section>
-<section id="create-new-repo" class="slide level2">
-<h2>Create new repo</h2>
+<img data-src="images/new_repo1.png" class="r-stretch"></section><section id="create-new-repo" class="slide level2"><h2>Create new repo</h2>
 <p>Go to <a href="https://github.com/new" class="uri">https://github.com/new</a> and then specify repository name</p>
 
-<img data-src="images/clipboard-1814069645.png" class="r-stretch"><p>Leave all things as is - don’t add README file or change any other option</p>
-</section>
-<section id="locally-create-a-git-repo" class="slide level2">
-<h2>Locally create a git repo</h2>
+<img data-src="images/new_repo2.png" class="r-stretch"><p>Leave all things as is - don’t add README file or change any other option</p>
+</section><section id="locally-create-a-git-repo" class="slide level2"><h2>Locally create a git repo</h2>
 <p>Go to the directory where you’d like to create a git repo - say <code>C:/Github</code> <!-- <div class=small-code> --></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2" data-code-line-numbers="|2|4|6|8|10|12|14|16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="co"># Initialized a git repository called `test_repo`</span></span>
-<span id="cb2-2"><a></a><span class="fu">git</span> init test_repo</span>
+<span id="cb2-2"><a></a><span class="fu">git</span> init NAME_OF_THE_REPO</span>
 <span id="cb2-3"><a></a><span class="co"># go to the newly created dir</span></span>
-<span id="cb2-4"><a></a><span class="bu">cd</span> test_repo</span>
+<span id="cb2-4"><a></a><span class="bu">cd</span> NAME_OF_THE_REPO</span>
 <span id="cb2-5"><a></a><span class="co"># Add some text to README.md</span></span>
 <span id="cb2-6"><a></a><span class="bu">echo</span> <span class="st">"# name_of_the_repo"</span> <span class="op">&gt;&gt;</span> README.md </span>
 <span id="cb2-7"><a></a><span class="co"># Add README.md to git</span></span>
@@ -603,20 +570,14 @@ Ali Abbas
 <span id="cb2-11"><a></a><span class="co"># Rename branch name to main</span></span>
 <span id="cb2-12"><a></a><span class="fu">git</span> branch <span class="at">-M</span> main </span>
 <span id="cb2-13"><a></a><span class="co"># Add remote origin</span></span>
-<span id="cb2-14"><a></a><span class="fu">git</span> remote add origin https://github.com/GITHUB_USERNAME/GITHUB_REPO_NAME.git </span>
+<span id="cb2-14"><a></a><span class="fu">git</span> remote add origin https://github.com/GITHUB_USERNAME/NAME_OF_THE_REPO.git </span>
 <span id="cb2-15"><a></a><span class="co"># Git push</span></span>
 <span id="cb2-16"><a></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <!-- </div> -->
-</section>
-<section id="git-help-and-manual" class="slide level2">
-<h2>Git help and manual</h2>
+</section><section id="git-help-and-manual" class="slide level2"><h2>Git help and manual</h2>
 <p>In case you forget options of a command, you can access the relevant list of options typing <code>git &lt;command&gt; -h</code> or access the corresponding Git manual by typing <code>git &lt;command&gt; --help</code>, e.g.:</p>
-<!-- ## Create git repo -->
-<!-- Creating a Repository git init command Basic Git Workflow Working directory, staging area, and repository Making Commits git add and git commit commands Viewing History git log command -->
-</section>
-<section id="exercise-2a-create-an-untracked-file" class="slide level2">
-<h2>Exercise 2a, create an untracked file:</h2>
+</section><section id="exercise-create-an-untracked-file" class="slide level2"><h2>Exercise: Create an untracked file:</h2>
 <p><br>- Create a new file in your repository.</p>
 <div style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;">
 <pre><code>
@@ -645,111 +606,119 @@ $ git status
 </div>
 </div>
 </div>
-</section>
-<section id="advanced-git-concepts" class="slide level2">
-<h2>Advanced Git Concepts</h2>
-<p>Branching in Git Creating and switching branches Merging Branches Fast-forward and three-way merges Resolving Merge Conflicts Manual conflict resolution Git Rebase Rewriting commit history</p>
-</section>
-<section id="github-desktop" class="slide level2">
-<h2>GitHub Desktop</h2>
+</section><section id="exercise-create-a-git-branch" class="slide level2"><h2>Exercise: create a git branch</h2>
+<ul>
+<li>Create a new branch using: <code>git branch my-shiny-new-branch</code>
+</li>
+<li>Checkout the branch using: <code>git checkout my-shiny-new-branch</code>
+</li>
+<li>Make a change in your new branch by editing new.txt and committing the changes.</li>
+<li>Note: you can combine the first two steps into one using <code>git checkout -b my-shiny-new-branch</code>
+</li>
+<li>Optional: set it upstream by <code>git push --set-upstream origin my-shiny-new-branch</code>
+</li>
+</ul></section><section id="exercise-switch-between-branches" class="slide level2"><h2>Exercise: switch between branches</h2>
+<p><br><img data-src="images/creating_branch_and_checking_out.png" style="width:35.0%" alt="creating branch and checking out"></p>
+</section><section id="advanced-git-concepts" class="slide level2"><h2>Advanced Git Concepts</h2>
+<p><span style="color:red;">Not covered</span></p>
+<ul>
+<li>Merging Branches</li>
+<li>Resolving Merge Conflicts Manual conflict resolution</li>
+<li>Git Rebase</li>
+<li>Rewriting commit history</li>
+</ul></section><section id="git-merge" class="slide level2"><h2>Git Merge</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://github.com/apps/desktop"><img data-src="images/screenshot-windows-dark.png" alt="GitHub Desktop"></a></p>
-<figcaption>GitHub Desktop</figcaption>
-</figure>
+<figure><p><a href="https://medium.com/@lovepreet013singhhundal/git-merge-vs-git-rebase-d386e1f3cda7"><img data-src="images/git_merge.png" alt="How git merge works"></a></p>
+<figcaption>How git merge works</figcaption></figure>
 </div>
-</section>
-<section id="overview-of-an-example-repo" class="slide level2">
-<h2>Overview of an example repo</h2>
+</section><section id="git-rebase" class="slide level2"><h2>Git Rebase</h2>
+
+<img data-src="images/git_rebase.png" alt="https://medium.com/@lovepreet013singhhundal/git-merge-vs-git-rebase-d386e1f3cda7" class="r-stretch quarto-figure-center"><p class="caption">How git rebase works</p></section><section id="github-desktop" class="slide level2"><h2>GitHub Desktop</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://github.com/ITHIM/ITHIM-R"><img data-src="images/clipboard-2594897253.png" class="quarto-figure quarto-figure-center" width="1802" alt="A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)"></a></p>
-</figure>
+<figure><p><a href="https://github.com/apps/desktop"><img data-src="images/screenshot-windows-dark.png" alt="GitHub Desktop"></a></p>
+<figcaption>GitHub Desktop</figcaption></figure>
 </div>
-<figcaption>A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)</figcaption>
-</figure>
-</div>
-</section>
-<section id="to-clone-or-to-fork-12" class="slide level2">
-<h2>To clone or to fork (1/2)?</h2>
+</section><section id="to-clone-or-to-fork-12" class="slide level2"><h2>To clone or to fork (1/2)?</h2>
 <p>Use a <em>clone</em> when:</p>
 <ul>
-<li class="fragment"><p>Collaboration (team or owner) OR all of the following is true:</p></li>
-<li class="fragment"><p>It is owned by someone else and you are happy not to have ownership of the codebase</p></li>
-<li class="fragment"><p>You have permission to push branches up to the repo</p></li>
-<li class="fragment"><p>You want easy access to the latest changes made by others to the central repository</p></li>
-<li class="fragment"><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
-</ul>
-</section>
-<section id="to-clone-or-to-fork-22" class="slide level2">
-<h2>To clone or to fork (2/2)?</h2>
+<li><p>Collaboration (team or owner) OR all of the following is true:</p></li>
+<li><p>It is owned by someone else and you are happy not to have ownership of the codebase</p></li>
+<li><p>You have permission to push branches up to the repo</p></li>
+<li><p>You want easy access to the latest changes made by others to the central repository</p></li>
+<li><p>You want the main branch in the repo to be updated and edited by others working on the project</p></li>
+</ul></section><section id="to-clone-or-to-fork-22" class="slide level2"><h2>To clone or to fork (2/2)?</h2>
 <p>Use a <em>fork</em> when:</p>
 <ul>
-<li class="fragment">The owner of the repo is not someone you are actively collaborating with</li>
-<li class="fragment">You want to take the development of the code in a different direction from the original owner of the repo</li>
-<li class="fragment">You want full ownership over your version of the codebase</li>
-<li class="fragment">You want complete control over other’s contributions to the codebase</li>
-<li class="fragment">You do not want or have permission on the main branch</li>
-</ul>
-</section>
-<section id="publishing-repositories-on-github" class="slide level2">
-<h2>Publishing Repositories on GitHub</h2>
+<li>The owner of the repo is not someone you are actively collaborating with</li>
+<li>You want to take the development of the code in a different direction from the original owner of the repo</li>
+<li>You want full ownership over your version of the codebase</li>
+<li>You want complete control over other’s contributions to the codebase</li>
+<li>You do not want or have permission on the main branch</li>
+</ul></section><section id="github" class="slide level2"><h2>GitHub</h2>
 <ul>
-<li class="fragment"><p>Creating a New Repository on GitHub Public vs.&nbsp;private repositories</p></li>
-<li class="fragment"><p>Pushing Local Repositories to GitHub</p>
-<ul>
-<li class="fragment"><p>git remote add and git push commands</p></li>
-<li class="fragment"><p>README and Documentation</p></li>
-</ul></li>
-<li class="fragment"><p>Importance of clear project descriptions</p></li>
-<li class="fragment"><p>Licensing</p></li>
-<li class="fragment"><p>Your Project Choosing an open source license GitHub Releases Tagging and creating releases</p></li>
+<li>GitHub is a website that lets you store your repository publicly for free</li>
+<li>Allows to create, store, manage and share code</li>
 </ul>
-</section>
-<section id="best-practices-for-project-organization" class="slide level2">
-<h2>Best practices for project organization</h2>
+<div class="fragment">
+<p><img data-src="images/github.png"></p>
+</div>
+</section><section id="overview-of-an-example-repo" class="slide level2"><h2>Overview of an example repo</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure><div class="quarto-figure quarto-figure-center">
+<figure><p><a href="https://github.com/ITHIM/ITHIM-R"><img data-src="images/ithim_repo.png" class="quarto-figure quarto-figure-center" width="1802" alt="A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)"></a></p>
+</figure>
+</div>
+<figcaption>A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)</figcaption></figure>
+</div>
+</section><section id="publishing-repositories-on-github" class="slide level2"><h2>Publishing Repositories on GitHub</h2>
 <ul>
-<li class="fragment">Treat data as read only</li>
-<li class="fragment">Describe data cleaning/wrangling steps</li>
-<li class="fragment">Treat generated output as disposable</li>
-<li class="fragment">Separate function definition and application</li>
-<li class="fragment">Save the data in the data directory</li>
+<li><p>Creating a New Repository on GitHub Public vs.&nbsp;private repositories</p></li>
+<li>
+<p>Pushing Local Repositories to GitHub</p>
+<ul>
+<li><p>git remote add and git push commands</p></li>
+<li><p>README and Documentation</p></li>
 </ul>
+</li>
+<li><p>Importance of clear project descriptions <i class="fa-solid fa-thumbs-up" aria-label="thumbs-up"></i></p></li>
+<li><p>Licensing</p></li>
+<li><p>Your Project Choosing an open source license GitHub Releases Tagging and creating releases</p></li>
+</ul></section><section id="best-practices-for-project-organization" class="slide level2"><h2>Best practices for project organization</h2>
+<ul>
+<li>Treat data as read only</li>
+<li>Describe data cleaning/wrangling steps</li>
+<li>Treat generated output as disposable</li>
+<li>Separate function definition and application</li>
+<li>Save the data in the data directory</li>
+</ul>
+<div class="fragment">
 <p><a href="https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html#best-practices-for-project-organization">source</a></p>
-</section>
-<section id="how-to-name-files" class="slide level2">
-<h2>How to name files</h2>
+</div>
+</section><section id="how-to-name-files" class="slide level2"><h2>How to name files</h2>
 <ul>
-<li class="fragment">Avoid spaces</li>
-<li class="fragment">Number them with to follow order with a prefix as <code>01_read_data.R</code> for the first file in the analysis</li>
-<li class="fragment">For dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.</li>
-<li class="fragment">Never use the word final in any file name - it never is!</li>
+<li>Avoid spaces</li>
+<li>Number them with to follow order with a prefix as <code>01_read_data.R</code> for the first file in the analysis</li>
+<li>For dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.</li>
+<li>Never use the word final in any file name - it never is!</li>
 </ul>
+<div class="fragment">
 <p>source: <a href="https://intro2r.com/file_names.html">An introduction to R</a></p>
-</section>
-<section id="create-new-project" class="slide level2">
-<h2>Create New project</h2>
+</div>
+</section><section id="create-new-project" class="slide level2"><h2>Create New project</h2>
 <p>We’re going to create a new project in RStudio:</p>
 <ul>
-<li class="fragment">Click the “File” menu button, then “New Project”.</li>
+<li>Click the “File” menu button, then “New Project”.</li>
 </ul>
 <p><img data-src="images/New Project.png" style="width:87.0%"> ## Select project type</p>
-</section>
-<section id="select-project-type" class="slide level2">
-<h2>Select project Type</h2>
+</section><section id="select-project-type" class="slide level2"><h2>Select project Type</h2>
 
 <img data-src="images/New Project Type.png" class="r-stretch"><ul>
-<li class="fragment"><p>Click “New Directory”.</p></li>
-<li class="fragment"><p>Click “New Project”.</p></li>
-<li class="fragment"><p>Type in the name of the directory to store your project, e.g.&nbsp;“my_project”.</p></li>
-<li class="fragment"><p>If available, select the checkbox for “Create a git repository.”</p></li>
-<li class="fragment"><p>Click the “Create Project” button.</p></li>
-</ul>
-</section>
-<section id="new-project-type" class="slide level2">
-<h2>New project type</h2>
+<li><p>Click “New Directory”.</p></li>
+<li><p>Click “New Project”.</p></li>
+<li><p>Type in the name of the directory to store your project, e.g.&nbsp;“my_project”.</p></li>
+<li><p>If available, select the checkbox for “Create a git repository.”</p></li>
+<li><p>Click the “Create Project” button.</p></li>
+</ul></section><section id="new-project-type" class="slide level2"><h2>New project type</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><img data-src="images/New Project Type.png"></p>
@@ -757,209 +726,17 @@ $ git status
 <p><img data-src="images/image_2.jpg"></p>
 <p><img data-src="images/image_3.jpg"></p>
 </div></div>
-</section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p><a href="https://quarto.org/"><img data-src="images/clipboard-3856080902.png"></a></p>
-</section>
-<section id="key-features" class="slide level2">
-<h2>Key Features</h2>
-<ul>
-<li class="fragment">Multi-language support (R, Python, Julia, Observable)</li>
-<li class="fragment">Multiple output formats (HTML, PDF, MS Office, etc.)</li>
-<li class="fragment">Reproducible research</li>
-<li class="fragment">Version control friendly</li>
-<li class="fragment">Extensible and customizable</li>
-</ul>
-</section>
-<section id="document-types" class="slide level2">
-<h2>Document Types</h2>
-<p>Supports various document types:</p>
-<ul>
-<li class="fragment">Articles</li>
-<li class="fragment">Presentations</li>
-<li class="fragment">Websites</li>
-<li class="fragment">Books</li>
-<li class="fragment">Interactive documents</li>
-</ul>
-</section>
-<section id="quarto-1" class="slide level2">
-<h2>Quarto</h2>
-<blockquote>
-<p>Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.</p>
-</blockquote>
-<div class="fragment">
-<ul>
-<li class="fragment"><p>Brings code and documentation together</p></li>
-<li class="fragment"><p>Running them side by side</p></li>
-<li class="fragment"><p>Generating outputs as we along</p></li>
-</ul>
-</div>
-</section>
-<section id="anatomy-of-a-quarto-document" class="slide level2">
-<h2>Anatomy of a Quarto document</h2>
-<ul>
-<li class="fragment">Metadata (YAML)</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a></a><span class="pp">---</span></span>
-<span id="cb3-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
-<span id="cb3-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment">
-<ul>
-<li class="fragment">Code</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb4-2"><a></a><span class="in">#| eval: true</span></span>
-<span id="cb4-3"><a></a><span class="in">library(dplyr)</span></span>
-<span id="cb4-4"><a></a><span class="in">mtcars %&gt;% </span></span>
-<span id="cb4-5"><a></a><span class="in">  group_by(cyl) %&gt;%</span></span>
-<span id="cb4-6"><a></a><span class="in">  summarize(mean = mean(mpg), .groups = "drop")</span></span>
-<span id="cb4-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 2
-    cyl  mean
-  &lt;dbl&gt; &lt;dbl&gt;
-1     4  26.7
-2     6  19.7
-3     8  15.1</code></pre>
-</div>
-</div>
-</div>
-<div class="fragment">
-<ul>
-<li class="fragment">Text</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="fu"># Heading 1</span></span>
-<span id="cb6-2"><a></a>This is a sentence with some **bold text**, some *italic text* and an <span class="co">[</span><span class="ot">image</span><span class="co">](image.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="how-it-works" class="slide level2">
-<h2>How it works</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png"></p>
-<figcaption>Python</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png"></p>
-<figcaption>R</figcaption>
-</figure>
-</div>
-</section>
-<section id="quarto-document-structure" class="slide level2">
-<h2>Quarto Document Structure</h2>
-<pre><code>YAML header for metadata and options
-Code chunks for executable content
-Markdown text for narrative and formatting</code></pre>
-</section>
-<section id="rendering-in-rstudio" class="slide level2">
-<h2>Rendering in RStudio</h2>
-<pre><code>Use "Render" button or Cmd/Ctrl + Shift + K
-Preview updates automatically
-Option to "Render on Save" for live preview</code></pre>
-</section>
-<section id="output-formats" class="slide level2">
-<h2>Output Formats</h2>
-<pre><code>HTML, PDF, MS Word, and more
-Specify in YAML header: format: html, pdf, docx
-Switch between formats using dropdown menu</code></pre>
-</section>
-<section id="code-execution" class="slide level2">
-<h2>Code Execution</h2>
-<pre><code>Run individual chunks with "Run" button
-Execute all chunks with "Run All"
-Output displayed inline or in console</code></pre>
-</section>
-<section id="visual-editor" class="slide level2">
-<h2>Visual Editor</h2>
-<pre><code>WYSIWYG interface for easy editing
-Insert elements with Cmd/Ctrl + / shortcut
-Seamless switching between visual and source modes</code></pre>
-</section>
-<section id="advanced-features" class="slide level2">
-<h2>Advanced Features</h2>
-<pre><code>Table of contents: toc: true in YAML
-Citations and bibliographies
-Cross-references and equations</code></pre>
-</section>
-<section id="version-control-integration" class="slide level2">
-<h2>Version Control Integration</h2>
-<pre><code>Built-in Git integration in RStudio
-Commit and push changes directly from IDE
-Collaborate easily with others</code></pre>
-</section>
-<section id="resources-and-next-steps" class="slide level2">
-<h2>Resources and Next Steps</h2>
-<pre><code>Quarto documentation: quarto.org
-RStudio Quarto Guide
-Practice with different output formats and features</code></pre>
-</section>
-<section id="quarto-cli-interface" class="slide level2">
-<h2>Quarto cli interface</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="|1|4|10|16|17"><pre class="sourceCode numberSource py number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a>Usage:   quarto</span>
-<span id="cb15-2"><a></a>Version: <span class="fl">1.5.57</span></span>
-<span id="cb15-3"><a></a></span>
-<span id="cb15-4"><a></a>Description:</span>
-<span id="cb15-5"><a></a></span>
-<span id="cb15-6"><a></a>  Quarto CLI</span>
-<span id="cb15-7"><a></a></span>
-<span id="cb15-8"><a></a>Options:</span>
-<span id="cb15-9"><a></a></span>
-<span id="cb15-10"><a></a>  <span class="op">-</span>h, <span class="op">--</span><span class="bu">help</span>     <span class="op">-</span> Show this <span class="bu">help</span>.</span>
-<span id="cb15-11"><a></a>  <span class="op">-</span>V, <span class="op">--</span>version  <span class="op">-</span> Show the version number <span class="cf">for</span> this program.</span>
-<span id="cb15-12"><a></a></span>
-<span id="cb15-13"><a></a>Commands:</span>
-<span id="cb15-14"><a></a></span>
-<span id="cb15-15"><a></a>  render     [<span class="bu">input</span>] [args...]     <span class="op">-</span> Render files <span class="kw">or</span> projects to various document types.</span>
-<span id="cb15-16"><a></a>  preview    [<span class="bu">file</span>] [args...]      <span class="op">-</span> Render <span class="kw">and</span> preview a document <span class="kw">or</span> website project.</span>
-<span id="cb15-17"><a></a>  serve      [<span class="bu">input</span>]               <span class="op">-</span> Serve a Shiny interactive document.</span>
-<span id="cb15-18"><a></a>  create     [<span class="bu">type</span>] [commands...]  <span class="op">-</span> Create a Quarto project <span class="kw">or</span> extension</span>
-<span id="cb15-19"><a></a>  use        <span class="op">&lt;</span><span class="bu">type</span><span class="op">&gt;</span> [target]       <span class="op">-</span> Automate document <span class="kw">or</span> project setup tasks.</span>
-<span id="cb15-20"><a></a>  add        <span class="op">&lt;</span>extension<span class="op">&gt;</span>           <span class="op">-</span> Add an extension to this folder <span class="kw">or</span> project</span>
-<span id="cb15-21"><a></a>  update     [target...]           <span class="op">-</span> Updates an extension <span class="kw">or</span> <span class="kw">global</span> dependency.</span>
-<span id="cb15-22"><a></a>  remove     [target...]           <span class="op">-</span> Removes an extension.</span>
-<span id="cb15-23"><a></a>  convert    <span class="op">&lt;</span><span class="bu">input</span><span class="op">&gt;</span>               <span class="op">-</span> Convert documents to alternate representations.</span>
-<span id="cb15-24"><a></a>  pandoc     [args...]             <span class="op">-</span> Run the version of Pandoc embedded within Quarto.</span>
-<span id="cb15-25"><a></a>  typst      [args...]             <span class="op">-</span> Run the version of Typst embedded within Quarto.</span>
-<span id="cb15-26"><a></a>  run        [script] [args...]    <span class="op">-</span> Run a TypeScript, R, Python, <span class="kw">or</span> Lua script.</span>
-<span id="cb15-27"><a></a>  install    [target...]           <span class="op">-</span> Installs a <span class="kw">global</span> dependency (TinyTex <span class="kw">or</span> Chromium).</span>
-<span id="cb15-28"><a></a>  uninstall  [tool]                <span class="op">-</span> Removes an extension.</span>
-<span id="cb15-29"><a></a>  tools                            <span class="op">-</span> Display the status of Quarto installed dependencies</span>
-<span id="cb15-30"><a></a>  publish    [provider] [path]     <span class="op">-</span> Publish a document <span class="kw">or</span> project to a provider.</span>
-<span id="cb15-31"><a></a>  check      [target]              <span class="op">-</span> Verify correct functioning of Quarto installation.</span>
-<span id="cb15-32"><a></a>  <span class="bu">help</span>       [command]             <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p><a href="https://tinyurl.com/cdh-repro">CDH Reproduciblity Workshop</a></p>
+<p><a href="https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/">CDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro</a></p>
 </div>
 </div>
 </section></section>
-    </div>
+</div>
   </div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="../site_libs/revealjs/dist/reveal.js"></script><!-- reveal.js plugins --><script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script><script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script><script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script><script src="../site_libs/revealjs/plugin/notes/notes.js"></script><script src="../site_libs/revealjs/plugin/search/search.js"></script><script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script><script src="../site_libs/revealjs/plugin/math/math.js"></script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
@@ -1149,84 +926,42 @@ Practice with different output formats and features</code></pre>
           RevealZoom
         ]
       });
-    </script>
-    
-
-    <script>
-
+    </script><script>
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
       // slide changes (different for each slide format).
-
       (function () {
-
         // dispatch for htmlwidgets
-
         function fireSlideEnter() {
-
           const event = window.document.createEvent("Event");
-
           event.initEvent("slideenter", true, true);
-
           window.document.dispatchEvent(event);
-
         }
-
     
-
         function fireSlideChanged(previousSlide, currentSlide) {
-
           fireSlideEnter();
-
     
-
           // dispatch for shiny
-
           if (window.jQuery) {
-
             if (previousSlide) {
-
               window.jQuery(previousSlide).trigger("hidden");
-
             }
-
             if (currentSlide) {
-
               window.jQuery(currentSlide).trigger("shown");
-
             }
-
           }
-
         }
-
     
-
         // hookup for slidy
-
         if (window.w3c_slidy) {
-
           window.w3c_slidy.add_observer(function (slide_num) {
-
             // slide_num starts at position 1
-
             fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
           });
-
         }
-
     
-
       })();
-
-    </script>
-
-    
-
-    <script id="quarto-html-after-body" type="application/javascript">
+    </script><script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -1413,6 +1148,6 @@ Practice with different output formats and features</code></pre>
       }
     });
     </script>
-    
+
 
 </body></html>
