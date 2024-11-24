@@ -7,6 +7,13 @@
     "text": "Overview\n\nOpen Research, Collaboration and Publishing with GitHub\n\nIncluding slides\nExample project\n\n\n\nSource code for the website"
   },
   {
+    "objectID": "slides/overview.html#reproducibility-crisis-in-research",
+    "href": "slides/overview.html#reproducibility-crisis-in-research",
+    "title": "Overview",
+    "section": "Reproducibility crisis in research",
+    "text": "Reproducibility crisis in research\n• Over 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments\n• A survey revealed that 52% of researchers believed there was a “significant reproducibility crisis” in science\n• Factors contributing to reproducibility issues include pressure to publish, selective reporting, insufficient replication in labs, poor oversight, and low statistical power\n• The reproducibility crisis affects multiple scientific fields, including psychology, medicine, genetics, and oncology, with some studies finding reproducibility rates as low as 10-40% in certain areas"
+  },
+  {
     "objectID": "slides/overview.html#learning-objectives",
     "href": "slides/overview.html#learning-objectives",
     "title": "Overview",
@@ -308,13 +315,13 @@
     "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command.\n\n\n\n\nCDH Reproduciblity Workshop"
   },
   {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Worskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nGit and GitHub\nslides\n\n\nQuarto\nslides\n\n\nPublishing\ninteractive",
+    "text": "A primer on Github - Github skills\nA comprehensive guide on git using R in particular - Happy git with R\nAn interactive website to learn about git branching at different levels - Git Branching\nA two-day workshop with examples on how to use Quarto - Getting Started with Quarto by Tom Mock",
     "crumbs": [
-      "Materials"
+      "Resources"
     ]
   },
   {
@@ -328,17 +335,20 @@
     ]
   },
   {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Worskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nGit and GitHub\n[slides]\n\n\nQuarto\n[slides]\n\n\nPublishing\ninteractive",
+    "crumbs": [
+      "Materials"
+    ]
+  },
+  {
     "objectID": "schedule.html",
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
     "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
-  },
-  {
-    "objectID": "slides/overview.html#motivation---tackling-repr",
-    "href": "slides/overview.html#motivation---tackling-repr",
-    "title": "Overview",
-    "section": "Motivation - Tackling repr",
-    "text": "Motivation - Tackling repr\nHere are 4 key points about the reproducibility crisis in science:\n• Over 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments\n• A survey revealed that 52% of researchers believed there was a “significant reproducibility crisis” in science\n• Factors contributing to reproducibility issues include pressure to publish, selective reporting, insufficient replication in labs, poor oversight, and low statistical power\n• The reproducibility crisis affects multiple scientific fields, including psychology, medicine, genetics, and oncology, with some studies finding reproducibility rates as low as 10-40% in certain areas"
   }
 ]
