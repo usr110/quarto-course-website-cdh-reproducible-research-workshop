@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Quarto"
 author: "Ali Abbas"
-format: 
+format:
   revealjs:
     slide-number: true
     incremental: true
@@ -12,7 +12,7 @@ format:
     smaller: true
     code-line-numbers: true
 pagetitle: "CDH Reproduciblity Workshop"
-footer: "[CDH Reproduciblity Workshop](https://tinyurl.com/cdh-repro)"
+footer: "[CDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)"
 engine: knitr
 ---
 
@@ -55,11 +55,11 @@ Supports various document types:
 
 -   Running them side by side
 
--   Generating outputs as we along
+-   Generating outputs as we go along
 
 ## Anatomy of a Quarto document
 
--   Metadata (YAML)
+-   Metadata (YAML) and options
 
 ``` yaml
 ---
@@ -69,7 +69,7 @@ format: html
 
 . . .
 
--   Code
+-   Code (executable chunks)
 
 ```{r}
 #| echo: fenced
@@ -82,7 +82,7 @@ mtcars %>%
 
 . . .
 
--   Text
+-   Text (narrative and formatting)
 
 ``` markdown
 # Heading 1
@@ -95,21 +95,12 @@ This is a sentence with some **bold text**, some *italic text* and an [image](im
 
 ![R](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
 
-## Quarto Document Structure
-
-```         
-YAML header for metadata and options
-Code chunks for executable content
-Markdown text for narrative and formatting
-```
-
 ## Rendering in RStudio
 
-```         
-Use "Render" button or Cmd/Ctrl + Shift + K
-Preview updates automatically
-Option to "Render on Save" for live preview
-```
+-   Use "Render" button or Cmd/Ctrl + Shift + K
+-   Preview updates automatically
+-   Option to "Render on Save" for live preview
+
 
 ## Output Formats
 

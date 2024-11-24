@@ -1,24 +1,23 @@
 ---
-title: "Overview"
+title: "Open Research, Collaboration and Publishing with GitHub"
 author: "Ali Abbas"
 format: 
   revealjs:
     slide-number: true
-    incremental: true
+    incremental: false
     transition: fade
     background-transition: fade
     highlight-style: github
     theme: solarized
-    #history: false
     smaller: true
     code-line-numbers: true
-    # scrollable: false
-    # auto-stretch: true
-    # code-overflow: wrap
-    # code-copy: true
-    # code-link: true
+    scrollable: true
+    auto-stretch: true
+    code-overflow: wrap
+    code-copy: true
+    code-link: true
 pagetitle: "CDH Reproduciblity Workshop"
-footer: "[CDH Reproduciblity Workshop](https://tinyurl.com/cdh-repro)"
+footer: "[CDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)"
 engine: knitr
 ---
 
@@ -27,8 +26,6 @@ engine: knitr
   font-size: 65%  
 }
 ```
-
-# Open Research, Collaboration and Publishing with GitHub
 
 ## Overview
 
@@ -54,7 +51,7 @@ engine: knitr
 
 ## Learning objectives
 
--   Learn what Git is all about
+-   Learn what `Git` is all about
     -   History
     -   Objectives
 -   Organize your work using a repository
@@ -63,13 +60,17 @@ engine: knitr
 -   Publish your work on GitHub
 -   Share your work for collaboration
 
-## Structure
+## Website
 
-| Topic          | Slides/content |
-|----------------|----------------|
-| Git and GitHub | slides         |
-| Quarto         | slides         |
-| Publishing     | interactive    |
+[![Website for the workshop](images/website.png){fig-align="center"}](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)
+
+## Structure of the day
+
+| Topic | Slides/content |
+|------------------------------------|------------------------------------|
+| Overview with the focus on Git and GitHub | [Overview](slides/overview.html "Overview") |
+| Introduction to Quarto | [Quarto](slides/quarto_intro.html "Introduction to Quarto") |
+| Publishing using Zenodo | interactive |
 
 : Worskshop structure
 
@@ -105,23 +106,6 @@ Source: https://www.geeksforgeeks.org/history-of-git/
 
 [![What git is all about?](https://imgs.xkcd.com/comics/git.png){fig-align="center" width="438"}](https://xkcd.com/1597/)
 
-## Structure of the day
-
-## ![](images/clipboard-1853622581.png)
-
-## GitHub
-
--   GitHub is a website that lets you store your repository publicly for free
--   Allows to create, store, manage and share code
-
-::: fragment
-![](images/github.png)
-:::
-
-## Git workflow
-
-![](images/git_areas.png)
-
 ## Configuring Git
 
 Setting up user name and email
@@ -137,30 +121,45 @@ git config --global user.email '[email address]'
 
 If you are concerned about privacy, please review [GitHub’s instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/).
 
+## Set Personal Access Token (PAT)
+
+PAT to communicate with Github requires:
+
+-   Visit [Github token generator](https://github.com/settings/tokens)
+    -   Or from R, use `usethis::create_github_token()`
+-   Select these scopes at a minimum: *repo*, *user*, and *workflow*
+-   Press **Generate token**
+-   Copy the generated PAT to your clipboard - and save it in a notepad
+-   Provide this PAT next time a Git operation asks for your password or store it by calling `gitcreds::gitcreds_set()`
+
+::: fragment
+Instructions from: [Happy Git and GitHub for the useR](https://happygitwithr.com/https-pat)
+:::
+
 ## Git commit
 
 Git has four main states that your files can be in:
 
 -   Untracked: You've created a new file and not told git to keep track of it.
--   Modified: You've changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the working tree.
--   Staged: You've told git to include the file next time you do a commit. We say these files are in the staging area.
+-   Modified: You've changed a file that git already has a record of, but have not told git to include these changes in your next commit. We say these files are in the `working tree`.
+-   Staged: You've told git to include the file next time you do a commit. We say these files are in the `staging area`.
 -   Committed: The file is saved in it's present state in the most recent commit.
 
 ## At each step in the process, the file is stored in a different area:
 
-![](images/show_different_file_states.png)
+![](images/git_areas.png)
 
 ## Exercise: create a git repo on Github
 
 go to github.com/user_github_username
 
-![](images/clipboard-1784368890.png)
+![](images/new_repo1.png)
 
 ## Create new repo
 
 Go to <https://github.com/new> and then specify repository name
 
-![](images/clipboard-1814069645.png)
+![](images/new_repo2.png)
 
 Leave all things as is - don't add README file or change any other option
 
@@ -173,9 +172,9 @@ Go to the directory where you'd like to create a git repo - say `C:/Github` <!--
 #| code-line-numbers: "|2|4|6|8|10|12|14|16"
 #| echo: true
 # Initialized a git repository called `test_repo`
-git init test_repo
+git init NAME_OF_THE_REPO
 # go to the newly created dir
-cd test_repo
+cd NAME_OF_THE_REPO
 # Add some text to README.md
 echo "# name_of_the_repo" >> README.md 
 # Add README.md to git
@@ -185,7 +184,7 @@ git commit -m "init commit - add README.md"
 # Rename branch name to main
 git branch -M main 
 # Add remote origin
-git remote add origin https://github.com/GITHUB_USERNAME/GITHUB_REPO_NAME.git 
+git remote add origin https://github.com/GITHUB_USERNAME/NAME_OF_THE_REPO.git 
 # Git push
 git push -u origin main
 ```
@@ -203,11 +202,7 @@ git config -h
 git config --help
 ```
 
-<!-- ## Create git repo -->
-
-<!-- Creating a Repository git init command Basic Git Workflow Working directory, staging area, and repository Making Commits git add and git commit commands Viewing History git log command -->
-
-## Exercise 2a, create an untracked file:
+## Exercise: Create an untracked file:
 
 <br>- Create a new file in your repository.
 
@@ -234,17 +229,38 @@ $ git status
 Highlights your working branch -\> main <br> Reports commit status -\> none yet <br>Highlights untracked files -\> new.txt <br>Proposes adding these to git with 'git add'
 :::
 
+## Exercise: create a git branch
+
+-   Create a new branch using: `git branch my-shiny-new-branch`
+-   Checkout the branch using: `git checkout my-shiny-new-branch`
+-   Make a change in your new branch by editing new.txt and committing the changes.
+-   Note: you can combine the first two steps into one using `git checkout -b my-shiny-new-branch`
+-   Optional: set it upstream by `git push --set-upstream origin my-shiny-new-branch`
+
+## Exercise: switch between branches
+
+<br> ![creating branch and checking out](images/creating_branch_and_checking_out.png){width="35%"}
+
 ## Advanced Git Concepts
 
-Branching in Git Creating and switching branches Merging Branches Fast-forward and three-way merges Resolving Merge Conflicts Manual conflict resolution Git Rebase Rewriting commit history
+[Not covered]{style="color:red;"}
+
+-   Merging Branches
+-   Resolving Merge Conflicts Manual conflict resolution
+-   Git Rebase
+-   Rewriting commit history
+
+## Git Merge
+
+[![How git merge works](images/git_merge.png)](https://medium.com/@lovepreet013singhhundal/git-merge-vs-git-rebase-d386e1f3cda7)
+
+## Git Rebase
+
+![How git rebase works](images/git_rebase.png){fig-alt="https://medium.com/@lovepreet013singhhundal/git-merge-vs-git-rebase-d386e1f3cda7"}
 
 ## GitHub Desktop
 
 [![GitHub Desktop](images/screenshot-windows-dark.png)](https://github.com/apps/desktop)
-
-## Overview of an example repo
-
-[![A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)](images/clipboard-2594897253.png){fig-align="center" width="1802"}](https://github.com/ITHIM/ITHIM-R)
 
 ## To clone or to fork (1/2)?
 
@@ -270,6 +286,19 @@ Use a *fork* when:
 -   You want complete control over other's contributions to the codebase
 -   You do not want or have permission on the main branch
 
+## GitHub
+
+-   GitHub is a website that lets you store your repository publicly for free
+-   Allows to create, store, manage and share code
+
+::: fragment
+![](images/github.png)
+:::
+
+## Overview of an example repo
+
+[![A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)](images/ithim_repo.png){fig-align="center" width="1802"}](https://github.com/ITHIM/ITHIM-R)
+
 ## Publishing Repositories on GitHub
 
 -   Creating a New Repository on GitHub Public vs. private repositories
@@ -280,7 +309,7 @@ Use a *fork* when:
 
     -   README and Documentation
 
--   Importance of clear project descriptions
+-   Importance of clear project descriptions {{< fa thumbs-up >}}
 
 -   Licensing
 
@@ -294,16 +323,20 @@ Use a *fork* when:
 -   Separate function definition and application
 -   Save the data in the data directory
 
+::: fragment
 [source](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html#best-practices-for-project-organization)
+:::
 
 ## How to name files
 
-- Avoid spaces
-- Number them with to follow order with a prefix as `01_read_data.R` for the first file in the analysis
-- For dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.
-- Never use the word final in any file name - it never is!
+-   Avoid spaces
+-   Number them with to follow order with a prefix as `01_read_data.R` for the first file in the analysis
+-   For dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.
+-   Never use the word final in any file name - it never is!
 
+::: fragment
 source: [An introduction to R](https://intro2r.com/file_names.html)
+:::
 
 ## Create New project
 
@@ -340,179 +373,3 @@ We’re going to create a new project in RStudio:
 ![](images/image_3.jpg)
 :::
 :::::
-
-## Quarto
-
-[![](images/clipboard-3856080902.png)](https://quarto.org/)
-
-## Key Features
-
--   Multi-language support (R, Python, Julia, Observable)
--   Multiple output formats (HTML, PDF, MS Office, etc.)
--   Reproducible research
--   Version control friendly
--   Extensible and customizable
-
-## Document Types
-
-Supports various document types:
-
--   Articles
--   Presentations
--   Websites
--   Books
--   Interactive documents
-
-## Quarto
-
-> Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
-
-. . .
-
--   Brings code and documentation together
-
--   Running them side by side
-
--   Generating outputs as we along
-
-## Anatomy of a Quarto document
-
--   Metadata (YAML)
-
-``` yaml
----
-format: html
----
-```
-
-. . .
-
--   Code
-
-```{r}
-#| echo: fenced
-#| eval: true
-library(dplyr)
-mtcars %>% 
-  group_by(cyl) %>%
-  summarize(mean = mean(mpg), .groups = "drop")
-```
-
-. . .
-
--   Text
-
-``` markdown
-# Heading 1
-This is a sentence with some **bold text**, some *italic text* and an [image](image.png).
-```
-
-## How it works
-
-![Python](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png)
-
-![R](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
-
-## Quarto Document Structure
-
-```         
-YAML header for metadata and options
-Code chunks for executable content
-Markdown text for narrative and formatting
-```
-
-## Rendering in RStudio
-
-```         
-Use "Render" button or Cmd/Ctrl + Shift + K
-Preview updates automatically
-Option to "Render on Save" for live preview
-```
-
-## Output Formats
-
-```         
-HTML, PDF, MS Word, and more
-Specify in YAML header: format: html, pdf, docx
-Switch between formats using dropdown menu
-```
-
-## Code Execution
-
-```         
-Run individual chunks with "Run" button
-Execute all chunks with "Run All"
-Output displayed inline or in console
-```
-
-## Visual Editor
-
-```         
-WYSIWYG interface for easy editing
-Insert elements with Cmd/Ctrl + / shortcut
-Seamless switching between visual and source modes
-```
-
-## Advanced Features
-
-```         
-Table of contents: toc: true in YAML
-Citations and bibliographies
-Cross-references and equations
-```
-
-## Version Control Integration
-
-```         
-Built-in Git integration in RStudio
-Commit and push changes directly from IDE
-Collaborate easily with others
-```
-
-## Resources and Next Steps
-
-```         
-Quarto documentation: quarto.org
-RStudio Quarto Guide
-Practice with different output formats and features
-```
-
-## Quarto cli interface
-
-```{py}
-#| eval: false
-#| echo: true
-#| code-line-numbers: "|1|4|10|16|17"
-Usage:   quarto
-Version: 1.5.57
-
-Description:
-
-  Quarto CLI
-
-Options:
-
-  -h, --help     - Show this help.
-  -V, --version  - Show the version number for this program.
-
-Commands:
-
-  render     [input] [args...]     - Render files or projects to various document types.
-  preview    [file] [args...]      - Render and preview a document or website project.
-  serve      [input]               - Serve a Shiny interactive document.
-  create     [type] [commands...]  - Create a Quarto project or extension
-  use        <type> [target]       - Automate document or project setup tasks.
-  add        <extension>           - Add an extension to this folder or project
-  update     [target...]           - Updates an extension or global dependency.
-  remove     [target...]           - Removes an extension.
-  convert    <input>               - Convert documents to alternate representations.
-  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.
-  typst      [args...]             - Run the version of Typst embedded within Quarto.
-  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.
-  install    [target...]           - Installs a global dependency (TinyTex or Chromium).
-  uninstall  [tool]                - Removes an extension.
-  tools                            - Display the status of Quarto installed dependencies
-  publish    [provider] [path]     - Publish a document or project to a provider.
-  check      [target]              - Verify correct functioning of Quarto installation.
-  help       [command]             - Show this help or the help of a sub-command.
-```
