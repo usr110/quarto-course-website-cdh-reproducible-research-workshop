@@ -1,5 +1,147 @@
 [
   {
+    "objectID": "slides/quarto_intro.html#quarto",
+    "href": "slides/quarto_intro.html#quarto",
+    "title": "Introduction to Quarto",
+    "section": "Quarto",
+    "text": "Quarto"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#key-features",
+    "href": "slides/quarto_intro.html#key-features",
+    "title": "Introduction to Quarto",
+    "section": "Key Features",
+    "text": "Key Features\n\nMulti-language support (R, Python, Julia, Observable)\nMultiple output formats (HTML, PDF, MS Office, etc.)\nReproducible research\nVersion control friendly\nExtensible and customizable"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#document-types",
+    "href": "slides/quarto_intro.html#document-types",
+    "title": "Introduction to Quarto",
+    "section": "Document Types",
+    "text": "Document Types\nSupports various document types:\n\nArticles\nPresentations\nWebsites\nBooks\nInteractive documents"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#quarto-1",
+    "href": "slides/quarto_intro.html#quarto-1",
+    "title": "Introduction to Quarto",
+    "section": "Quarto",
+    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\n\nBrings code and documentation together\nRunning them side by side\nGenerating outputs as we along"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#anatomy-of-a-quarto-document",
+    "href": "slides/quarto_intro.html#anatomy-of-a-quarto-document",
+    "title": "Introduction to Quarto",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\n\nMetadata (YAML)\n\n---\nformat: html\n---\n\n\nCode\n\n\n```{r}\n#| eval: true\nlibrary(dplyr)\nmtcars %&gt;% \n  group_by(cyl) %&gt;%\n  summarize(mean = mean(mpg), .groups = \"drop\")\n```\n\n# A tibble: 3 × 2\n    cyl  mean\n  &lt;dbl&gt; &lt;dbl&gt;\n1     4  26.7\n2     6  19.7\n3     8  15.1\n\n\n\n\n\nText\n\n# Heading 1\nThis is a sentence with some **bold text**, some *italic text* and an [image](image.png)."
+  },
+  {
+    "objectID": "slides/quarto_intro.html#how-it-works",
+    "href": "slides/quarto_intro.html#how-it-works",
+    "title": "Introduction to Quarto",
+    "section": "How it works",
+    "text": "How it works\n\n\n\nPython\n\n\n\n\n\nR"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#quarto-document-structure",
+    "href": "slides/quarto_intro.html#quarto-document-structure",
+    "title": "Introduction to Quarto",
+    "section": "Quarto Document Structure",
+    "text": "Quarto Document Structure\nYAML header for metadata and options\nCode chunks for executable content\nMarkdown text for narrative and formatting"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#rendering-in-rstudio",
+    "href": "slides/quarto_intro.html#rendering-in-rstudio",
+    "title": "Introduction to Quarto",
+    "section": "Rendering in RStudio",
+    "text": "Rendering in RStudio\nUse \"Render\" button or Cmd/Ctrl + Shift + K\nPreview updates automatically\nOption to \"Render on Save\" for live preview"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#output-formats",
+    "href": "slides/quarto_intro.html#output-formats",
+    "title": "Introduction to Quarto",
+    "section": "Output Formats",
+    "text": "Output Formats\nHTML, PDF, MS Word, and more\nSpecify in YAML header: format: html, pdf, docx\nSwitch between formats using dropdown menu"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#code-execution",
+    "href": "slides/quarto_intro.html#code-execution",
+    "title": "Introduction to Quarto",
+    "section": "Code Execution",
+    "text": "Code Execution\nRun individual chunks with \"Run\" button\nExecute all chunks with \"Run All\"\nOutput displayed inline or in console"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#visual-editor",
+    "href": "slides/quarto_intro.html#visual-editor",
+    "title": "Introduction to Quarto",
+    "section": "Visual Editor",
+    "text": "Visual Editor\nWYSIWYG interface for easy editing\nInsert elements with Cmd/Ctrl + / shortcut\nSeamless switching between visual and source modes"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#advanced-features",
+    "href": "slides/quarto_intro.html#advanced-features",
+    "title": "Introduction to Quarto",
+    "section": "Advanced Features",
+    "text": "Advanced Features\nTable of contents: toc: true in YAML\nCitations and bibliographies\nCross-references and equations"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#version-control-integration",
+    "href": "slides/quarto_intro.html#version-control-integration",
+    "title": "Introduction to Quarto",
+    "section": "Version Control Integration",
+    "text": "Version Control Integration\nBuilt-in Git integration in RStudio\nCommit and push changes directly from IDE\nCollaborate easily with others"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#resources-and-next-steps",
+    "href": "slides/quarto_intro.html#resources-and-next-steps",
+    "title": "Introduction to Quarto",
+    "section": "Resources and Next Steps",
+    "text": "Resources and Next Steps\nQuarto documentation: quarto.org\nRStudio Quarto Guide\nPractice with different output formats and features"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#quarto-cli-interface",
+    "href": "slides/quarto_intro.html#quarto-cli-interface",
+    "title": "Introduction to Quarto",
+    "section": "Quarto cli interface",
+    "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command.\n\n\n\n\nCDH Reproduciblity Workshop"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Worskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nGit and GitHub\n[slides]\n\n\nQuarto\n[slides]\n\n\nPublishing\ninteractive",
+    "crumbs": [
+      "Materials"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Open Research, Collaboration and Publishing with GitHub",
+    "section": "",
+    "text": "Convenor: Ali Abbas, CDH RSE Methods Fellow 2024–25\n🗓️ November 25th, 2024\n⏰ 13:00 - 17:00\n🏨 Cambridge\n✍️ CDH Workshop on reproducibility\nThis workshop introduces students to open research practices, reproducibility using Git, and code and data publishing via GitHub. Students learn best practices for organising projects, writing clean and well-documented code, and creating reproducible analyses. Examples will be given in R and Python but the techniques are generalisable to other languages. The importance of data transparency and sharing is highlighted, encouraging students to adopt an open research mindset.\nGit will be introduced as a powerful tool for version control and collaboration. Students will learn to track changes in their code, create branches for experimentation, and merge updates. Git’s role in ensuring reproducibility will be emphasised, showing how it allows researchers to maintain a complete history of their work.\nThroughout the course, reproducibility is a key focus. Students learn to create self-contained project structures, use relative file paths, and document their analysis process. Using open-source publishing system Quarto participants will create dynamic reports that combine code, results, and narrative.\nThe course concludes with strategies for publishing and sharing research projects. Students learn to create GitHub Pages to showcase their work, use Zenodo for creating DOIs for their code, and explore options for deploying interactive applications using tools such as Shiny.\nThis workshop will be most suitable for those with a bit of programming experience and who have some code and data that they would like to organise and publish.\nSoftware and hardware requirements\nParticipants require:\n\nA laptop on which they have admin rights (you can install software)\nThe following software installed on your laptop: Git, R, R Studio, Quarto\nA GitHub account",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "A primer on Github - Github skills\nA comprehensive guide on git using R in particular - Happy git with R\nAn interactive website to learn about git branching at different levels - Git Branching\nA two-day workshop with examples on how to use Quarto - Getting Started with Quarto by Tom Mock",
+    "crumbs": [
+      "Resources"
+    ]
+  },
+  {
     "objectID": "slides/overview.html#overview",
     "href": "slides/overview.html#overview",
     "title": "Overview",
@@ -42,18 +184,18 @@
     "text": "Key milestones\nKey Milestones in Git’s development:\n\nInitial release and Git 1.0 (2005): From first version of Git to a broader usage, beyond the Linux kernel project, with version 1.0\nGitHub Launch (2008): a web-based platform for hosting Git repositories, revolutionized how developers collaborated on open-source projects. GitHub’s user-friendly interface and social features accelerated Git’s adoption.\nWide Adoption (2010s): From 2010s, git became the standard VCS\n\n\nSource: https://www.geeksforgeeks.org/history-of-git/"
   },
   {
+    "objectID": "slides/overview.html#git-comic",
+    "href": "slides/overview.html#git-comic",
+    "title": "Overview",
+    "section": "Git comic",
+    "text": "Git comic\n\n\n\n\n\n\n\nWhat git is all about?"
+  },
+  {
     "objectID": "slides/overview.html#structure-of-the-day",
     "href": "slides/overview.html#structure-of-the-day",
     "title": "Overview",
     "section": "Structure of the day",
     "text": "Structure of the day"
-  },
-  {
-    "objectID": "slides/overview.html#git-related",
-    "href": "slides/overview.html#git-related",
-    "title": "Overview",
-    "section": "Git related",
-    "text": "Git related\n\nGithub skills\nHappy git with R\n[]"
   },
   {
     "objectID": "slides/overview.html#github",
@@ -140,18 +282,11 @@
     "text": "GitHub Desktop\n\n\n\nGitHub Desktop"
   },
   {
-    "objectID": "slides/overview.html#the-rise-of-github",
-    "href": "slides/overview.html#the-rise-of-github",
+    "objectID": "slides/overview.html#overview-of-an-example-repo",
+    "href": "slides/overview.html#overview-of-an-example-repo",
     "title": "Overview",
-    "section": "The Rise of GitHub",
-    "text": "The Rise of GitHub\nGitHub's Founding in 2008\n    Tom Preston-Werner, Chris Wanstrath, and PJ Hyett\nGitHub's Growth\n    Key milestones and user statistics2\nMicrosoft's Acquisition in 2018\n    Impact on the developer community\nGitHub's Role in Open Source\n    Hosting millions of public repositories2"
-  },
-  {
-    "objectID": "slides/overview.html#github-features",
-    "href": "slides/overview.html#github-features",
-    "title": "Overview",
-    "section": "GitHub Features",
-    "text": "GitHub Features\nRepository Management Creating and organizing repositories Collaboration Tools Pull requests and code reviews Issue Tracking Bug reports and feature requests GitHub Actions Continuous Integration and Deployment GitHub Pages Hosting static websites"
+    "section": "Overview of an example repo",
+    "text": "Overview of an example repo\n\n\n\n\n\n\n\nA repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)"
   },
   {
     "objectID": "slides/overview.html#to-clone-or-to-fork-12",
@@ -172,21 +307,21 @@
     "href": "slides/overview.html#publishing-repositories-on-github",
     "title": "Overview",
     "section": "Publishing Repositories on GitHub",
-    "text": "Publishing Repositories on GitHub\nCreating a New Repository on GitHub Public vs. private repositories Pushing Local Repositories to GitHub git remote add and git push commands README and Documentation Importance of clear project descriptions Licensing Your Project Choosing an open source license GitHub Releases Tagging and creating releases"
-  },
-  {
-    "objectID": "slides/overview.html#conclusion",
-    "href": "slides/overview.html#conclusion",
-    "title": "Overview",
-    "section": "Conclusion",
-    "text": "Conclusion\nThe Future of Git and GitHub AI-powered development with GitHub Copilot Emerging trends in version control and collaboration"
+    "text": "Publishing Repositories on GitHub\n\nCreating a New Repository on GitHub Public vs. private repositories\nPushing Local Repositories to GitHub\n\ngit remote add and git push commands\nREADME and Documentation\n\nImportance of clear project descriptions\nLicensing\nYour Project Choosing an open source license GitHub Releases Tagging and creating releases"
   },
   {
     "objectID": "slides/overview.html#best-practices-for-project-organization",
     "href": "slides/overview.html#best-practices-for-project-organization",
     "title": "Overview",
     "section": "Best practices for project organization",
-    "text": "Best practices for project organization\n\nTreat data as read only\nData Cleaning\nTreat generated output as disposable\nSeparate function definition and application\nSave the data in the data directory\n\nsource"
+    "text": "Best practices for project organization\n\nTreat data as read only\nDescribe data cleaning/wrangling steps\nTreat generated output as disposable\nSeparate function definition and application\nSave the data in the data directory\n\nsource"
+  },
+  {
+    "objectID": "slides/overview.html#how-to-name-files",
+    "href": "slides/overview.html#how-to-name-files",
+    "title": "Overview",
+    "section": "How to name files",
+    "text": "How to name files\n\nAvoid spaces\nNumber them with to follow order with a prefix as 01_read_data.R for the first file in the analysis\nFor dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.\nNever use the word final in any file name - it never is!\n\nsource: An introduction to R"
   },
   {
     "objectID": "slides/overview.html#create-new-project",
@@ -235,7 +370,7 @@
     "href": "slides/overview.html#quarto-1",
     "title": "Overview",
     "section": "Quarto",
-    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\nNo more copy-paste, no more manually rebuilding analyses from disparate components, no more dread when the data is updated and you need to run an analysis."
+    "text": "Quarto\n\nQuarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.\n\n\n\nBrings code and documentation together\nRunning them side by side\nGenerating outputs as we along"
   },
   {
     "objectID": "slides/overview.html#anatomy-of-a-quarto-document",
@@ -313,42 +448,5 @@
     "title": "Overview",
     "section": "Quarto cli interface",
     "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command.\n\n\n\n\nCDH Reproduciblity Workshop"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "A primer on Github - Github skills\nA comprehensive guide on git using R in particular - Happy git with R\nAn interactive website to learn about git branching at different levels - Git Branching\nA two-day workshop with examples on how to use Quarto - Getting Started with Quarto by Tom Mock",
-    "crumbs": [
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Open Research, Collaboration and Publishing with GitHub",
-    "section": "",
-    "text": "Convenor: Ali Abbas, CDH RSE Methods Fellow 2024–25\n🗓️ November 25th, 2024\n⏰ 13:00 - 17:00\n🏨 Cambridge\n✍️ CDH Workshop on reproducibility\nThis workshop introduces students to open research practices, reproducibility using Git, and code and data publishing via GitHub. Students learn best practices for organising projects, writing clean and well-documented code, and creating reproducible analyses. Examples will be given in R and Python but the techniques are generalisable to other languages. The importance of data transparency and sharing is highlighted, encouraging students to adopt an open research mindset.\nGit will be introduced as a powerful tool for version control and collaboration. Students will learn to track changes in their code, create branches for experimentation, and merge updates. Git’s role in ensuring reproducibility will be emphasised, showing how it allows researchers to maintain a complete history of their work.\nThroughout the course, reproducibility is a key focus. Students learn to create self-contained project structures, use relative file paths, and document their analysis process. Using open-source publishing system Quarto participants will create dynamic reports that combine code, results, and narrative.\nThe course concludes with strategies for publishing and sharing research projects. Students learn to create GitHub Pages to showcase their work, use Zenodo for creating DOIs for their code, and explore options for deploying interactive applications using tools such as Shiny.\nThis workshop will be most suitable for those with a bit of programming experience and who have some code and data that they would like to organise and publish.\nSoftware and hardware requirements\nParticipants require:\n\nA laptop on which they have admin rights (you can install software)\nThe following software installed on your laptop: Git, R, R Studio, Quarto\nA GitHub account",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Course Materials",
-    "section": "",
-    "text": "Worskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nGit and GitHub\n[slides]\n\n\nQuarto\n[slides]\n\n\nPublishing\ninteractive",
-    "crumbs": [
-      "Materials"
-    ]
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
-    "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
   }
 ]
