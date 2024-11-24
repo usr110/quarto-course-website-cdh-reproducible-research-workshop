@@ -116,7 +116,7 @@
     "href": "materials.html",
     "title": "Course Materials",
     "section": "",
-    "text": "Worskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nGit and GitHub\n[slides]\n\n\nQuarto\n[slides]\n\n\nPublishing\ninteractive",
+    "text": "Worskshop structure\n\n\nTopic\nSlides/content\n\n\n\n\nOverview with the focus on Git and GitHub\nOverview\n\n\nIntroduction to Quarto\nQuarto\n\n\nPublishing using Zenodo\ninteractive",
     "crumbs": [
       "Materials"
     ]
