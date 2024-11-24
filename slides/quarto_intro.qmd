@@ -1,0 +1,206 @@
+---
+title: "Introduction to Quarto"
+author: "Ali Abbas"
+format: 
+  revealjs:
+    slide-number: true
+    incremental: true
+    transition: fade
+    background-transition: fade
+    highlight-style: github
+    theme: solarized
+    #history: false
+    smaller: true
+    code-line-numbers: true
+    # scrollable: false
+    # auto-stretch: true
+    # code-overflow: wrap
+    # code-copy: true
+    # code-link: true
+pagetitle: "CDH Reproduciblity Workshop"
+footer: "[CDH Reproduciblity Workshop](https://tinyurl.com/cdh-repro)"
+engine: knitr
+---
+
+```{css echo=FALSE}
+.small-code{
+  font-size: 65%  
+}
+```
+
+
+## Quarto
+
+[![](images/clipboard-3856080902.png)](https://quarto.org/)
+
+## Key Features
+
+-   Multi-language support (R, Python, Julia, Observable)
+-   Multiple output formats (HTML, PDF, MS Office, etc.)
+-   Reproducible research
+-   Version control friendly
+-   Extensible and customizable
+
+## Document Types
+
+Supports various document types:
+
+-   Articles
+-   Presentations
+-   Websites
+-   Books
+-   Interactive documents
+
+## Quarto
+
+> Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
+
+. . .
+
+-   Brings code and documentation together
+
+-   Running them side by side
+
+-   Generating outputs as we along
+
+## Anatomy of a Quarto document
+
+-   Metadata (YAML)
+
+``` yaml
+---
+format: html
+---
+```
+
+. . .
+
+-   Code
+
+```{r}
+#| echo: fenced
+#| eval: true
+library(dplyr)
+mtcars %>% 
+  group_by(cyl) %>%
+  summarize(mean = mean(mpg), .groups = "drop")
+```
+
+. . .
+
+-   Text
+
+``` markdown
+# Heading 1
+This is a sentence with some **bold text**, some *italic text* and an [image](image.png).
+```
+
+## How it works
+
+![Python](https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png)
+
+![R](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
+
+## Quarto Document Structure
+
+```         
+YAML header for metadata and options
+Code chunks for executable content
+Markdown text for narrative and formatting
+```
+
+## Rendering in RStudio
+
+```         
+Use "Render" button or Cmd/Ctrl + Shift + K
+Preview updates automatically
+Option to "Render on Save" for live preview
+```
+
+## Output Formats
+
+```         
+HTML, PDF, MS Word, and more
+Specify in YAML header: format: html, pdf, docx
+Switch between formats using dropdown menu
+```
+
+## Code Execution
+
+```         
+Run individual chunks with "Run" button
+Execute all chunks with "Run All"
+Output displayed inline or in console
+```
+
+## Visual Editor
+
+```         
+WYSIWYG interface for easy editing
+Insert elements with Cmd/Ctrl + / shortcut
+Seamless switching between visual and source modes
+```
+
+## Advanced Features
+
+```         
+Table of contents: toc: true in YAML
+Citations and bibliographies
+Cross-references and equations
+```
+
+## Version Control Integration
+
+```         
+Built-in Git integration in RStudio
+Commit and push changes directly from IDE
+Collaborate easily with others
+```
+
+## Resources and Next Steps
+
+```         
+Quarto documentation: quarto.org
+RStudio Quarto Guide
+Practice with different output formats and features
+```
+
+## Quarto cli interface
+
+```{py}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "|1|4|10|16|17"
+Usage:   quarto
+Version: 1.5.57
+
+Description:
+
+  Quarto CLI
+
+Options:
+
+  -h, --help     - Show this help.
+  -V, --version  - Show the version number for this program.
+
+Commands:
+
+  render     [input] [args...]     - Render files or projects to various document types.
+  preview    [file] [args...]      - Render and preview a document or website project.
+  serve      [input]               - Serve a Shiny interactive document.
+  create     [type] [commands...]  - Create a Quarto project or extension
+  use        <type> [target]       - Automate document or project setup tasks.
+  add        <extension>           - Add an extension to this folder or project
+  update     [target...]           - Updates an extension or global dependency.
+  remove     [target...]           - Removes an extension.
+  convert    <input>               - Convert documents to alternate representations.
+  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.
+  typst      [args...]             - Run the version of Typst embedded within Quarto.
+  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.
+  install    [target...]           - Installs a global dependency (TinyTex or Chromium).
+  uninstall  [tool]                - Removes an extension.
+  tools                            - Display the status of Quarto installed dependencies
+  publish    [provider] [path]     - Publish a document or project to a provider.
+  check      [target]              - Verify correct functioning of Quarto installation.
+  help       [command]             - Show this help or the help of a sub-command.
+```
