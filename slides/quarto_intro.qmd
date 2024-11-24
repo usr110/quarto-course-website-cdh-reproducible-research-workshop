@@ -22,7 +22,6 @@ engine: knitr
 }
 ```
 
-
 ## Quarto
 
 [![](images/clipboard-3856080902.png)](https://quarto.org/)
@@ -100,7 +99,6 @@ This is a sentence with some **bold text**, some *italic text* and an [image](im
 -   Use "Render" button or Cmd/Ctrl + Shift + K
 -   Preview updates automatically
 -   Option to "Render on Save" for live preview
-
 
 ## Output Formats
 
@@ -189,3 +187,9 @@ Commands:
   check      [target]              - Verify correct functioning of Quarto installation.
   help       [command]             - Show this help or the help of a sub-command.
 ```
+
+#  {#git background-image="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" background-size="cover" background-color="white"}
+
+## Instructions to create a Digital Object Identifiers (DOI)
+
+[![Creating a DOI for your repository with Zenodo](images/zenodo.png)](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
