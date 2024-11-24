@@ -3,14 +3,10 @@ title: "Course Materials"
 engine: knitr
 ---
 
-
-| Topic          | Slides/content |
-|----------------|----------------|
-| Git and GitHub | [slides]       |
-| Quarto         | [slides]       |
-| Publishing     | interactive    |
+| Topic | Slides/content |
+|----|----|
+| Overview with the focus on Git and GitHub | [Overview](slides/overview.html "Overview") |
+| Introduction to Quarto | [Quarto](slides/quarto_intro.html "Introduction to Quarto") |
+| Publishing using Zenodo | interactive |
 
 : Worskshop structure
-
-
-
