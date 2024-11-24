@@ -101,15 +101,13 @@ Key Milestones in Git’s development:
 Source: https://www.geeksforgeeks.org/history-of-git/
 :::
 
+## Git comic
+
+[![What git is all about?](https://imgs.xkcd.com/comics/git.png){fig-align="center" width="438"}](https://xkcd.com/1597/)
+
 ## Structure of the day
 
 ## ![](images/clipboard-1853622581.png)
-
-## Git related
-
--   [Github skills](https://skills.github.com/)
--   [Happy git with R](https://happygitwithr.com/)
--   \[\]
 
 ## GitHub
 
@@ -151,10 +149,6 @@ Git has four main states that your files can be in:
 ## At each step in the process, the file is stored in a different area:
 
 ![](images/show_different_file_states.png)
-
-::: fragment
-![](images/github.png)
-:::
 
 ## Exercise: create a git repo on Github
 
@@ -248,22 +242,9 @@ Branching in Git Creating and switching branches Merging Branches Fast-forward a
 
 [![GitHub Desktop](images/screenshot-windows-dark.png)](https://github.com/apps/desktop)
 
-## The Rise of GitHub
+## Overview of an example repo
 
-```         
-GitHub's Founding in 2008
-    Tom Preston-Werner, Chris Wanstrath, and PJ Hyett
-GitHub's Growth
-    Key milestones and user statistics2
-Microsoft's Acquisition in 2018
-    Impact on the developer community
-GitHub's Role in Open Source
-    Hosting millions of public repositories2
-```
-
-## GitHub Features
-
-Repository Management Creating and organizing repositories Collaboration Tools Pull requests and code reviews Issue Tracking Bug reports and feature requests GitHub Actions Continuous Integration and Deployment GitHub Pages Hosting static websites
+[![A repo of Integrated Transport and Health Impact Modelling Tool (ITHIM)](images/clipboard-2594897253.png){fig-align="center" width="1802"}](https://github.com/ITHIM/ITHIM-R)
 
 ## To clone or to fork (1/2)?
 
@@ -291,21 +272,38 @@ Use a *fork* when:
 
 ## Publishing Repositories on GitHub
 
-Creating a New Repository on GitHub Public vs. private repositories Pushing Local Repositories to GitHub git remote add and git push commands README and Documentation Importance of clear project descriptions Licensing Your Project Choosing an open source license GitHub Releases Tagging and creating releases
+-   Creating a New Repository on GitHub Public vs. private repositories
 
-## Conclusion
+-   Pushing Local Repositories to GitHub
 
-The Future of Git and GitHub AI-powered development with GitHub Copilot Emerging trends in version control and collaboration
+    -   git remote add and git push commands
+
+    -   README and Documentation
+
+-   Importance of clear project descriptions
+
+-   Licensing
+
+-   Your Project Choosing an open source license GitHub Releases Tagging and creating releases
 
 ## Best practices for project organization
 
 -   Treat data as read only
--   Data Cleaning
+-   Describe data cleaning/wrangling steps
 -   Treat generated output as disposable
 -   Separate function definition and application
 -   Save the data in the data directory
 
 [source](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro.html#best-practices-for-project-organization)
+
+## How to name files
+
+- Avoid spaces
+- Number them with to follow order with a prefix as `01_read_data.R` for the first file in the analysis
+- For dates in filenames, use the ISO 8601 format YYYY-MM-DD (or YYYYMMDD) to ensure your files are listed in proper chronological order.
+- Never use the word final in any file name - it never is!
+
+source: [An introduction to R](https://intro2r.com/file_names.html)
 
 ## Create New project
 
@@ -343,24 +341,6 @@ We’re going to create a new project in RStudio:
 :::
 :::::
 
-<!-- ## Slide Backgrounds {background="#43464B"} -->
-
-<!-- Set the `background` attribute on a slide to change the background color -->
-
-<!-- (all CSS color formats are supported). -->
-
-<!-- Different background transitions are available via the -->
-
-<!-- `background-transition` option. -->
-
-<!-- ::: footer -->
-
-<!-- Learn more: [Slide -->
-
-<!-- Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds) -->
-
-<!-- ::: -->
-
 ## Quarto
 
 [![](images/clipboard-3856080902.png)](https://quarto.org/)
@@ -389,7 +369,11 @@ Supports various document types:
 
 . . .
 
-No more copy-paste, no more manually rebuilding analyses from disparate components, no more dread when the data is updated and you need to run an analysis.
+-   Brings code and documentation together
+
+-   Running them side by side
+
+-   Generating outputs as we along
 
 ## Anatomy of a Quarto document
 
