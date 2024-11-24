@@ -4,13 +4,18 @@ author: "Ali Abbas"
 format:
   revealjs:
     slide-number: true
-    incremental: true
+    incremental: false
     transition: fade
     background-transition: fade
     highlight-style: github
     theme: solarized
     smaller: true
     code-line-numbers: true
+    scrollable: true
+    auto-stretch: true
+    code-overflow: wrap
+    code-copy: true
+    code-link: true
 pagetitle: "CDH Reproduciblity Workshop"
 footer: "[CDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro](https://usr110.github.io/quarto-course-website-cdh-reproducible-research-workshop/)"
 engine: knitr

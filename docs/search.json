@@ -39,7 +39,7 @@
     "href": "slides/quarto_intro.html#how-it-works",
     "title": "Introduction to Quarto",
     "section": "How it works",
-    "text": "How it works\n\n\n\nPython\n\n\n\n\n\nR"
+    "text": "How it works\n\n\nPython\n\n\n\nR"
   },
   {
     "objectID": "slides/quarto_intro.html#rendering-in-rstudio",
@@ -96,6 +96,13 @@
     "title": "Introduction to Quarto",
     "section": "Quarto cli interface",
     "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command."
+  },
+  {
+    "objectID": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
+    "href": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
+    "title": "Introduction to Quarto",
+    "section": "Instructions to create a Digital Object Identifiers (DOI)",
+    "text": "Instructions to create a Digital Object Identifiers (DOI)\n\n\nCreating a DOI for your repository with Zenodo\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
   },
   {
     "objectID": "schedule.html",
@@ -364,19 +371,5 @@
     "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "New project type",
     "text": "New project type\n\n\n\n\n\n\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
-  },
-  {
-    "objectID": "slides/quarto_intro.html#instructions-to-create-doi",
-    "href": "slides/quarto_intro.html#instructions-to-create-doi",
-    "title": "Introduction to Quarto",
-    "section": "Instructions to create DOI",
-    "text": "Instructions to create DOI\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
-  },
-  {
-    "objectID": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
-    "href": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
-    "title": "Introduction to Quarto",
-    "section": "Instructions to create a Digital Object Identifiers (DOI)",
-    "text": "Instructions to create a Digital Object Identifiers (DOI)\n\n\n\nCreating a DOI for your repository with Zenodo\n\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
   }
 ]

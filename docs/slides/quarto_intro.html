@@ -7,17 +7,17 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
-
-  <meta name="author" content="Ali Abbas">
-  <title>CDH Reproducible Research Workshop – CDH Reproduciblity Workshop</title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
-  <style>
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+<meta name="author" content="Ali Abbas">
+<title>CDH Reproducible Research Workshop – CDH Reproduciblity Workshop</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+<style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -95,12 +95,12 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
-  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
-  <style type="text/css">
+<link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+<link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+<link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+<style type="text/css">
 
   .callout {
     margin-top: 1em;
@@ -298,7 +298,7 @@
   }
 
   </style>
-  <style type="text/css">
+<style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
       overflow: auto;
@@ -309,6 +309,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -390,8 +391,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction to Quarto</h1>
+<section id="title-slide" class="quarto-title-block center"><h1 class="title">Introduction to Quarto</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -401,66 +401,51 @@ Ali Abbas
 </div>
 </div>
 
-</section>
-<section class="slide level2">
-
-<div class="cell">
+</section><section class="slide level2"><div class="cell">
 <style type="text/css">
 .small-code{
   font-size: 65%  
 }
 </style>
 </div>
-</section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
+</section><section id="quarto" class="slide level2"><h2>Quarto</h2>
 <p><a href="https://quarto.org/"><img data-src="images/clipboard-3856080902.png"></a></p>
-</section>
-<section id="key-features" class="slide level2">
-<h2>Key Features</h2>
+</section><section id="key-features" class="slide level2"><h2>Key Features</h2>
 <ul>
-<li class="fragment">Multi-language support (R, Python, Julia, Observable)</li>
-<li class="fragment">Multiple output formats (HTML, PDF, MS Office, etc.)</li>
-<li class="fragment">Reproducible research</li>
-<li class="fragment">Version control friendly</li>
-<li class="fragment">Extensible and customizable</li>
-</ul>
-</section>
-<section id="document-types" class="slide level2">
-<h2>Document Types</h2>
+<li>Multi-language support (R, Python, Julia, Observable)</li>
+<li>Multiple output formats (HTML, PDF, MS Office, etc.)</li>
+<li>Reproducible research</li>
+<li>Version control friendly</li>
+<li>Extensible and customizable</li>
+</ul></section><section id="document-types" class="slide level2"><h2>Document Types</h2>
 <p>Supports various document types:</p>
 <ul>
-<li class="fragment">Articles</li>
-<li class="fragment">Presentations</li>
-<li class="fragment">Websites</li>
-<li class="fragment">Books</li>
-<li class="fragment">Interactive documents</li>
-</ul>
-</section>
-<section id="quarto-1" class="slide level2">
-<h2>Quarto</h2>
+<li>Articles</li>
+<li>Presentations</li>
+<li>Websites</li>
+<li>Books</li>
+<li>Interactive documents</li>
+</ul></section><section id="quarto-1" class="slide level2"><h2>Quarto</h2>
 <blockquote>
 <p>Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.</p>
 </blockquote>
 <div class="fragment">
 <ul>
-<li class="fragment"><p>Brings code and documentation together</p></li>
-<li class="fragment"><p>Running them side by side</p></li>
-<li class="fragment"><p>Generating outputs as we go along</p></li>
+<li><p>Brings code and documentation together</p></li>
+<li><p>Running them side by side</p></li>
+<li><p>Generating outputs as we go along</p></li>
 </ul>
 </div>
-</section>
-<section id="anatomy-of-a-quarto-document" class="slide level2">
-<h2>Anatomy of a Quarto document</h2>
+</section><section id="anatomy-of-a-quarto-document" class="slide level2"><h2>Anatomy of a Quarto document</h2>
 <ul>
-<li class="fragment">Metadata (YAML) and options</li>
+<li>Metadata (YAML) and options</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a></a><span class="pp">---</span></span>
 <span id="cb1-2"><a></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
 <span id="cb1-3"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <ul>
-<li class="fragment">Code (executable chunks)</li>
+<li>Code (executable chunks)</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r}</span></span>
@@ -482,73 +467,50 @@ Ali Abbas
 </div>
 <div class="fragment">
 <ul>
-<li class="fragment">Text (narrative and formatting)</li>
+<li>Text (narrative and formatting)</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="fu"># Heading 1</span></span>
 <span id="cb4-2"><a></a>This is a sentence with some **bold text**, some *italic text* and an <span class="co">[</span><span class="ot">image</span><span class="co">](image.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="how-it-works" class="slide level2">
-<h2>How it works</h2>
+</section><section id="how-it-works" class="slide level2"><h2>How it works</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png"></p>
-<figcaption>Python</figcaption>
-</figure>
+<figure><p><img data-src="https://quarto.org/docs/get-started/hello/images/qmd-how-it-works.png"></p>
+<figcaption>Python</figcaption></figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png"></p>
-<figcaption>R</figcaption>
-</figure>
+<figure><p><img data-src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png"></p>
+<figcaption>R</figcaption></figure>
 </div>
-</section>
-<section id="rendering-in-rstudio" class="slide level2">
-<h2>Rendering in RStudio</h2>
+</section><section id="rendering-in-rstudio" class="slide level2"><h2>Rendering in RStudio</h2>
 <ul>
-<li class="fragment">Use “Render” button or Cmd/Ctrl + Shift + K</li>
-<li class="fragment">Preview updates automatically</li>
-<li class="fragment">Option to “Render on Save” for live preview</li>
-</ul>
-</section>
-<section id="output-formats" class="slide level2">
-<h2>Output Formats</h2>
+<li>Use “Render” button or Cmd/Ctrl + Shift + K</li>
+<li>Preview updates automatically</li>
+<li>Option to “Render on Save” for live preview</li>
+</ul></section><section id="output-formats" class="slide level2"><h2>Output Formats</h2>
 <pre><code>HTML, PDF, MS Word, and more
 Specify in YAML header: format: html, pdf, docx
 Switch between formats using dropdown menu</code></pre>
-</section>
-<section id="code-execution" class="slide level2">
-<h2>Code Execution</h2>
+</section><section id="code-execution" class="slide level2"><h2>Code Execution</h2>
 <pre><code>Run individual chunks with "Run" button
 Execute all chunks with "Run All"
 Output displayed inline or in console</code></pre>
-</section>
-<section id="visual-editor" class="slide level2">
-<h2>Visual Editor</h2>
+</section><section id="visual-editor" class="slide level2"><h2>Visual Editor</h2>
 <pre><code>WYSIWYG interface for easy editing
 Insert elements with Cmd/Ctrl + / shortcut
 Seamless switching between visual and source modes</code></pre>
-</section>
-<section id="advanced-features" class="slide level2">
-<h2>Advanced Features</h2>
+</section><section id="advanced-features" class="slide level2"><h2>Advanced Features</h2>
 <pre><code>Table of contents: toc: true in YAML
 Citations and bibliographies
 Cross-references and equations</code></pre>
-</section>
-<section id="version-control-integration" class="slide level2">
-<h2>Version Control Integration</h2>
+</section><section id="version-control-integration" class="slide level2"><h2>Version Control Integration</h2>
 <pre><code>Built-in Git integration in RStudio
 Commit and push changes directly from IDE
 Collaborate easily with others</code></pre>
-</section>
-<section id="resources-and-next-steps" class="slide level2">
-<h2>Resources and Next Steps</h2>
+</section><section id="resources-and-next-steps" class="slide level2"><h2>Resources and Next Steps</h2>
 <pre><code>Quarto documentation: quarto.org
 RStudio Quarto Guide
 Practice with different output formats and features</code></pre>
-</section>
-<section id="quarto-cli-interface" class="slide level2">
-<h2>Quarto cli interface</h2>
+</section><section id="quarto-cli-interface" class="slide level2"><h2>Quarto cli interface</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|1|4|10|16|17"><pre class="sourceCode numberSource py number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a></a>Usage:   quarto</span>
 <span id="cb11-2"><a></a>Version: <span class="fl">1.5.57</span></span>
@@ -583,19 +545,12 @@ Practice with different output formats and features</code></pre>
 <span id="cb11-31"><a></a>  check      [target]              <span class="op">-</span> Verify correct functioning of Quarto installation.</span>
 <span id="cb11-32"><a></a>  <span class="bu">help</span>       [command]             <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section>
-<section id="git" class="title-slide slide level1 center" data-background-image="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" data-background-size="cover" data-background-color="white">
-<h1></h1>
+</section><section><section id="git" class="title-slide slide level1 center" data-background-image="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" data-background-size="cover" data-background-color="white"><h1></h1>
 
-</section>
-<section id="instructions-to-create-a-digital-object-identifiers-doi" class="slide level2">
-<h2>Instructions to create a Digital Object Identifiers (DOI)</h2>
+</section><section id="instructions-to-create-a-digital-object-identifiers-doi" class="slide level2"><h2>Instructions to create a Digital Object Identifiers (DOI)</h2>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content"><img data-src="images/zenodo.png" alt="Creating a DOI for your repository with Zenodo"></a></p>
-<figcaption>Creating a DOI for your repository with Zenodo</figcaption>
-</figure>
+<figure><p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content"><img data-src="images/zenodo.png" alt="Creating a DOI for your repository with Zenodo"></a></p>
+<figcaption>Creating a DOI for your repository with Zenodo</figcaption></figure>
 </div>
 
 <div class="quarto-auto-generated-content">
@@ -604,26 +559,10 @@ Practice with different output formats and features</code></pre>
 </div>
 </div>
 </section></section>
-    </div>
+</div>
   </div>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="../site_libs/revealjs/dist/reveal.js"></script>
-  <!-- reveal.js plugins -->
-  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
-  
-
-  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
-  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
-
-  <script>
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="../site_libs/revealjs/dist/reveal.js"></script><!-- reveal.js plugins --><script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script><script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script><script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script><script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script><script src="../site_libs/revealjs/plugin/notes/notes.js"></script><script src="../site_libs/revealjs/plugin/search/search.js"></script><script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script><script src="../site_libs/revealjs/plugin/math/math.js"></script><script>window.define = window.backupDefine; window.backupDefine = undefined;</script><script>
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
@@ -813,84 +752,42 @@ Practice with different output formats and features</code></pre>
           RevealZoom
         ]
       });
-    </script>
-    
-
-    <script>
-
+    </script><script>
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
       // slide changes (different for each slide format).
-
       (function () {
-
         // dispatch for htmlwidgets
-
         function fireSlideEnter() {
-
           const event = window.document.createEvent("Event");
-
           event.initEvent("slideenter", true, true);
-
           window.document.dispatchEvent(event);
-
         }
-
     
-
         function fireSlideChanged(previousSlide, currentSlide) {
-
           fireSlideEnter();
-
     
-
           // dispatch for shiny
-
           if (window.jQuery) {
-
             if (previousSlide) {
-
               window.jQuery(previousSlide).trigger("hidden");
-
             }
-
             if (currentSlide) {
-
               window.jQuery(currentSlide).trigger("shown");
-
             }
-
           }
-
         }
-
     
-
         // hookup for slidy
-
         if (window.w3c_slidy) {
-
           window.w3c_slidy.add_observer(function (slide_num) {
-
             // slide_num starts at position 1
-
             fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
           });
-
         }
-
     
-
       })();
-
-    </script>
-
-    
-
-    <script id="quarto-html-after-body" type="application/javascript">
+    </script><script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -1077,6 +974,6 @@ Practice with different output formats and features</code></pre>
       }
     });
     </script>
-    
+
 
 </body></html>
