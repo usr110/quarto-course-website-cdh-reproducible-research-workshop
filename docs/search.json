@@ -102,7 +102,7 @@
     "href": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
     "title": "Introduction to Quarto",
     "section": "Instructions to create a Digital Object Identifiers (DOI)",
-    "text": "Instructions to create a Digital Object Identifiers (DOI)\n\n\nCreating a DOI for your repository with Zenodo\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
+    "text": "Instructions to create a Digital Object Identifiers (DOI)\n\n\nCreating a DOI for your repository with Zenodo"
   },
   {
     "objectID": "schedule.html",
@@ -370,6 +370,6 @@
     "href": "slides/overview.html#new-project-type",
     "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "New project type",
-    "text": "New project type\n\n\n\n\n\n\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
+    "text": "New project type"
   }
 ]
