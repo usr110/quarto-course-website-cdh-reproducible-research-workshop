@@ -9,14 +9,8 @@ format:
     background-transition: fade
     highlight-style: github
     theme: solarized
-    #history: false
     smaller: true
     code-line-numbers: true
-    # scrollable: false
-    # auto-stretch: true
-    # code-overflow: wrap
-    # code-copy: true
-    # code-link: true
 pagetitle: "CDH Reproduciblity Workshop"
 footer: "[CDH Reproduciblity Workshop](https://tinyurl.com/cdh-repro)"
 engine: knitr
