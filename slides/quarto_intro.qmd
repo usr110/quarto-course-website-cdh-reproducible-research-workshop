@@ -29,7 +29,7 @@ engine: knitr
 
 ## Quarto
 
-[![Quarto - a publishing system](images/clipboard-1264820803.png)](https://quarto.org/)
+[![Quarto - a publishing system](images/quarto_screenshot.png)](https://quarto.org/)
 
 ## Key Features
 
@@ -184,7 +184,7 @@ Commands:
 
 ## Quarto example repo
 
-[![Reproducible repo to create quarto documents](images/clipboard-3861963390.png){fig-align="center"}](https://github.com/usr110/CDH_repro_quarto_example)
+[![Reproducible repo to create quarto documents](images/cdh_repro_screenshot.png){fig-align="center"}](https://github.com/usr110/CDH_repro_quarto_example)
 
 #  {#zenodo background-image="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" background-size="cover" background-color="white"}
 
