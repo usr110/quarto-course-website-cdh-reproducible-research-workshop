@@ -4,7 +4,7 @@
     "href": "slides/quarto_intro.html#quarto",
     "title": "Introduction to Quarto",
     "section": "Quarto",
-    "text": "Quarto"
+    "text": "Quarto\n\n\nQuarto - a publishing system"
   },
   {
     "objectID": "slides/quarto_intro.html#key-features",
@@ -53,56 +53,56 @@
     "href": "slides/quarto_intro.html#output-formats",
     "title": "Introduction to Quarto",
     "section": "Output Formats",
-    "text": "Output Formats\nHTML, PDF, MS Word, and more\nSpecify in YAML header: format: html, pdf, docx\nSwitch between formats using dropdown menu"
+    "text": "Output Formats\n\nHTML, PDF, MS Word, and more\nSpecify in YAML header: format: html, pdf, docx\nSwitch between formats using dropdown menu"
   },
   {
     "objectID": "slides/quarto_intro.html#code-execution",
     "href": "slides/quarto_intro.html#code-execution",
     "title": "Introduction to Quarto",
     "section": "Code Execution",
-    "text": "Code Execution\nRun individual chunks with \"Run\" button\nExecute all chunks with \"Run All\"\nOutput displayed inline or in console"
+    "text": "Code Execution\n\nRun individual chunks with “Run” button\nExecute all chunks with “Run All”\nOutput displayed inline or in console"
   },
   {
     "objectID": "slides/quarto_intro.html#visual-editor",
     "href": "slides/quarto_intro.html#visual-editor",
     "title": "Introduction to Quarto",
     "section": "Visual Editor",
-    "text": "Visual Editor\nWYSIWYG interface for easy editing\nInsert elements with Cmd/Ctrl + / shortcut\nSeamless switching between visual and source modes"
+    "text": "Visual Editor\n\nWYSIWYG interface for easy editing\nInsert elements with Cmd/Ctrl + / shortcut\nSeamless switching between visual and source modes"
   },
   {
     "objectID": "slides/quarto_intro.html#advanced-features",
     "href": "slides/quarto_intro.html#advanced-features",
     "title": "Introduction to Quarto",
     "section": "Advanced Features",
-    "text": "Advanced Features\nTable of contents: toc: true in YAML\nCitations and bibliographies\nCross-references and equations"
+    "text": "Advanced Features\n\nTable of contents: toc: true in YAML\nCitations and bibliographies\nCross-references and equations"
   },
   {
     "objectID": "slides/quarto_intro.html#version-control-integration",
     "href": "slides/quarto_intro.html#version-control-integration",
     "title": "Introduction to Quarto",
     "section": "Version Control Integration",
-    "text": "Version Control Integration\nBuilt-in Git integration in RStudio\nCommit and push changes directly from IDE\nCollaborate easily with others"
+    "text": "Version Control Integration\n\nBuilt-in Git integration in RStudio\nCommit and push changes directly from IDE\nCollaborate easily with others"
   },
   {
     "objectID": "slides/quarto_intro.html#resources-and-next-steps",
     "href": "slides/quarto_intro.html#resources-and-next-steps",
     "title": "Introduction to Quarto",
     "section": "Resources and Next Steps",
-    "text": "Resources and Next Steps\nQuarto documentation: quarto.org\nRStudio Quarto Guide\nPractice with different output formats and features"
+    "text": "Resources and Next Steps\n\nQuarto documentation: quarto.org\nRStudio Quarto Guide"
   },
   {
     "objectID": "slides/quarto_intro.html#quarto-cli-interface",
     "href": "slides/quarto_intro.html#quarto-cli-interface",
     "title": "Introduction to Quarto",
     "section": "Quarto cli interface",
-    "text": "Quarto cli interface\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command."
+    "text": "Quarto cli interface\n\nquarto --help\n\nUsage:   quarto\nVersion: 1.5.57\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.\n  -V, --version  - Show the version number for this program.\n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.\n  serve      [input]               - Serve a Shiny interactive document.\n  create     [type] [commands...]  - Create a Quarto project or extension\n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.\n  add        &lt;extension&gt;           - Add an extension to this folder or project\n  update     [target...]           - Updates an extension or global dependency.\n  remove     [target...]           - Removes an extension.\n  convert    &lt;input&gt;               - Convert documents to alternate representations.\n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.\n  typst      [args...]             - Run the version of Typst embedded within Quarto.\n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.\n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.\n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.\n  check      [target]              - Verify correct functioning of Quarto installation.\n  help       [command]             - Show this help or the help of a sub-command."
   },
   {
     "objectID": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
     "href": "slides/quarto_intro.html#instructions-to-create-a-digital-object-identifiers-doi",
     "title": "Introduction to Quarto",
     "section": "Instructions to create a Digital Object Identifiers (DOI)",
-    "text": "Instructions to create a Digital Object Identifiers (DOI)\n\n\nCreating a DOI for your repository with Zenodo"
+    "text": "Instructions to create a Digital Object Identifiers (DOI)\n\n\nCreating a DOI for your repository with Zenodo\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
   },
   {
     "objectID": "schedule.html",
@@ -257,8 +257,8 @@
     "objectID": "slides/overview.html#exercise-create-an-untracked-file",
     "href": "slides/overview.html#exercise-create-an-untracked-file",
     "title": "Open Research, Collaboration and Publishing with GitHub",
-    "section": "Exercise: Create an untracked file:",
-    "text": "Exercise: Create an untracked file:\n- Create a new file in your repository.\n\n\n$ touch new.txt\n$ code new.txt\n\n\n Lets check what git can see…\n\n\n$ git status\n\n\n\n\n\n\n\n\n\ngit status\n\n\nHighlights your working branch -&gt; main  Reports commit status -&gt; none yet Highlights untracked files -&gt; new.txt Proposes adding these to git with ‘git add’"
+    "section": "Exercise: Create an untracked file",
+    "text": "Exercise: Create an untracked file\n- Create a new file in your repository.\n\n$ notepad new.txt \n\n Lets check what git can see…\n\n$ git status\n\n\n\n\n\n\n\n\ngit status\n\n\nHighlights your working branch -&gt; main  Reports commit status -&gt; none yet Highlights untracked files -&gt; new.txt Proposes adding these to git with ‘git add’"
   },
   {
     "objectID": "slides/overview.html#exercise-create-a-git-branch",
@@ -370,6 +370,13 @@
     "href": "slides/overview.html#new-project-type",
     "title": "Open Research, Collaboration and Publishing with GitHub",
     "section": "New project type",
-    "text": "New project type"
+    "text": "New project type\n\n\n\n\n\n\n\n\n\n\nCDH Reproduciblity Workshop - https://tinyurl.com/cdh-repro"
+  },
+  {
+    "objectID": "slides/quarto_intro.html#quarto-example-repo",
+    "href": "slides/quarto_intro.html#quarto-example-repo",
+    "title": "Introduction to Quarto",
+    "section": "Quarto example repo",
+    "text": "Quarto example repo\n\n\n\n\n\nReproducible repo to create quarto documents"
   }
 ]
