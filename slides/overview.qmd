@@ -202,28 +202,23 @@ git config -h
 git config --help
 ```
 
-## Exercise: Create an untracked file:
+## Exercise: Create an untracked file
 
 <br>- Create a new file in your repository.
 
-::: {style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;"}
 ```{=html}
 <pre><code>
-$ touch new.txt
-$ code new.txt
+$ notepad new.txt 
 </code></pre>
 ```
-:::
 
 <br> Lets check what git can see...
 
-::: {style="background-color: black; color: white; padding: 10px; border-radius: 5px; font-family: monospace;"}
 ```{=html}
 <pre><code>
 $ git status
 </code></pre>
 ```
-:::
 
 ::: {.callout-tip title="git status"}
 Highlights your working branch -\> main <br> Reports commit status -\> none yet <br>Highlights untracked files -\> new.txt <br>Proposes adding these to git with 'git add'
@@ -245,9 +240,9 @@ Highlights your working branch -\> main <br> Reports commit status -\> none yet 
 
 [Not covered]{style="color:red;"}
 
--   Merging Branches
--   Resolving Merge Conflicts Manual conflict resolution
--   Git Rebase
+-   Merging branches
+-   Resolving merge conflicts
+-   Git rebase
 -   Rewriting commit history
 
 ## Git Merge
