@@ -27,6 +27,19 @@ engine: knitr
 }
 ```
 
+## What is Quarto
+
+> Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
+
+. . .
+
+-   Brings code and documentation together
+
+-   Running them side by side
+
+-   Generating outputs as we go along
+
+
 ## Quarto
 
 [![Quarto - a publishing system](images/quarto_screenshot.png)](https://quarto.org/)
@@ -49,18 +62,6 @@ Supports various document types:
 -   Books
 -   Interactive documents
 
-## Quarto
-
-> Quarto® is an open-source scientific and technical publishing system built on Pandoc. You can weave together narrative text and code to produce elegantly formatted output as documents, web pages, blog posts, books and more.
-
-. . .
-
--   Brings code and documentation together
-
--   Running them side by side
-
--   Generating outputs as we go along
-
 ## Anatomy of a Quarto document
 
 -   Metadata (YAML) and options
@@ -70,7 +71,6 @@ Supports various document types:
 format: html
 ---
 ```
-
 . . .
 
 -   Code (executable chunks)
