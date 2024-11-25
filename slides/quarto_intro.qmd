@@ -29,7 +29,7 @@ engine: knitr
 
 ## Quarto
 
-[![](images/clipboard-3856080902.png)](https://quarto.org/)
+[![Quarto - a publishing system](images/clipboard-1264820803.png)](https://quarto.org/)
 
 ## Key Features
 
@@ -107,58 +107,47 @@ This is a sentence with some **bold text**, some *italic text* and an [image](im
 
 ## Output Formats
 
-```         
-HTML, PDF, MS Word, and more
-Specify in YAML header: format: html, pdf, docx
-Switch between formats using dropdown menu
-```
+-   HTML, PDF, MS Word, and more
+-   Specify in YAML header: format: html, pdf, docx
+-   Switch between formats using dropdown menu
 
 ## Code Execution
 
-```         
-Run individual chunks with "Run" button
-Execute all chunks with "Run All"
-Output displayed inline or in console
-```
+-   Run individual chunks with "Run" button
+-   Execute all chunks with "Run All"
+-   Output displayed inline or in console
 
 ## Visual Editor
 
-```         
-WYSIWYG interface for easy editing
-Insert elements with Cmd/Ctrl + / shortcut
-Seamless switching between visual and source modes
-```
+-   WYSIWYG interface for easy editing
+-   Insert elements with Cmd/Ctrl + / shortcut
+-   Seamless switching between visual and source modes
 
 ## Advanced Features
 
-```         
-Table of contents: toc: true in YAML
-Citations and bibliographies
-Cross-references and equations
-```
+-   Table of contents: toc: true in YAML
+-   Citations and bibliographies
+-   Cross-references and equations
 
 ## Version Control Integration
 
-```         
-Built-in Git integration in RStudio
-Commit and push changes directly from IDE
-Collaborate easily with others
-```
+-   Built-in Git integration in RStudio
+-   Commit and push changes directly from IDE
+-   Collaborate easily with others
 
 ## Resources and Next Steps
 
-```         
-Quarto documentation: quarto.org
-RStudio Quarto Guide
-Practice with different output formats and features
-```
+-   Quarto documentation: quarto.org
+-   RStudio Quarto Guide
 
 ## Quarto cli interface
 
-```{py}
+```{python}
 #| eval: false
 #| echo: true
-#| code-line-numbers: "|1|4|10|16|17"
+#| code-line-numbers: "|1|4|10|17|18"
+quarto --help
+
 Usage:   quarto
 Version: 1.5.57
 
@@ -193,7 +182,11 @@ Commands:
   help       [command]             - Show this help or the help of a sub-command.
 ```
 
-#  {#git background-image="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" background-size="cover" background-color="white"}
+## Quarto example repo
+
+[![Reproducible repo to create quarto documents](images/clipboard-3861963390.png){fig-align="center"}](https://github.com/usr110/CDH_repro_quarto_example)
+
+#  {#zenodo background-image="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" background-size="cover" background-color="white"}
 
 ## Instructions to create a Digital Object Identifiers (DOI)
 
